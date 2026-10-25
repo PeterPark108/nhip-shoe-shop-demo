@@ -2,8 +2,17 @@ const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelecto
 const vnd=n=>n.toLocaleString('vi-VN')+'đ';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const ic=(n,c='')=>`<svg class="${c}" aria-hidden="true"><use href="#i-${n}"/></svg>`;
-const CATS={sneaker:'Sneaker','chay-bo':'Chạy bộ','giay-da':'Giày da',sandal:'Sandal'};const GEN={nam:'Nam',nu:'Nữ',unisex:'Unisex'};
+const CATS={sneaker:'Sneaker','chay-bo':'Chạy bộ','giay-da':'Giày da',sandal:'Sandal','the-thao':'Thể thao',boot:'Boot',dep:'Dép','giay-luoi':'Giày lười','tre-em':'Trẻ em'};const GEN={nam:'Nam',nu:'Nữ',unisex:'Unisex'};
 const SW={'Trắng':'#f7f7f5','Đen':'#151515','Trắng xám':'linear-gradient(135deg,#f5f5f3 50%,#9a9a9a 50%)','Trắng kem':'#efe6d2','Tím':'#6f4fa0','Hồng':'#f2a7b8','Cam san hô':'#ff7a59','Trắng sọc đỏ':'linear-gradient(135deg,#fff 50%,#c8300c 50%)','Xanh navy':'#1c2a4a','Đen đỏ':'linear-gradient(135deg,#151515 50%,#c8300c 50%)','Nâu đỏ':'#7a2e1f','Tím xanh':'linear-gradient(135deg,#6f4fa0 50%,#2d6cdf 50%)','Nhiều màu':'conic-gradient(#ff7a59,#f2c94c,#2d6cdf,#6f4fa0,#ff7a59)','Xanh dương':'#2d6cdf','Nâu':'#7b5135','Đen xám':'linear-gradient(135deg,#151515 50%,#8a8a8a 50%)'};
+const BASE_C=[['xanh navy','#1c2a4a'],['tím than','#2e2350'],['xanh rêu','#5b6b3a'],['xanh mint','#9fe0c8'],['xanh lá','#2f7d4f'],['xanh lục','#1d8a7a'],['xanh dương','#2d6cdf'],['xanh da trời','#79b8f0'],['xanh biển','#1f6f9f'],['xanh','#2d6cdf'],['đỏ đô','#6d1a24'],['nâu đỏ','#7a2e1f'],['nâu bò','#a0703f'],['nâu cát','#c2a27a'],['nâu sẫm','#4a2f22'],['nâu vàng','#b8862e'],['nâu','#7b5135'],['hồng pastel','#f6c9d3'],['hồng phấn','#f3bccb'],['hồng','#f2a7b8'],['tím lavender','#c3b1e1'],['tím','#6f4fa0'],['cam san hô','#ff7a59'],['cam neon','#ff6a13'],['cam đào','#ffb08a'],['cam','#f27a1a'],['vàng neon','#e4f222'],['vàng','#f2c94c'],['đỏ','#c8300c'],['xám khói','#6b6b6b'],['xám nhạt','#cfcfcf'],['xám bạc','#b9bcc0'],['xám','#8a8a8a'],['bạc','#c7c9cc'],['be nude','#e3c7ad'],['be','#e4d3b9'],['kem','#efe6d2'],['mộc','#d8ccb4'],['trắng','#f7f7f5'],['đen','#151515']];
+const SWC={};const sw=c=>{if(SW[c])return SW[c];if(SWC[c])return SWC[c];let t=c.toLowerCase(),f=[];while(t.trim()){t=t.trim();const m=BASE_C.find(([k])=>t.startsWith(k));if(m){f.push(m[1]);t=t.slice(m[0].length)}else t=t.replace(/^\S+/,'')}
+ return SWC[c]=!f.length?'#ccc':f.length===1?f[0]:`linear-gradient(135deg,${f[0]} 50%,${f[1]} 50%)`};
+const fam=c=>{const t=c.toLowerCase();return (BASE_C.find(([k])=>t.startsWith(k))||['khác'])[0].split(' ')[0]};
+const FAM={'trắng':'Trắng','đen':'Đen','xám':'Xám','be':'Be / Kem','kem':'Be / Kem','mộc':'Be / Kem','nâu':'Nâu','xanh':'Xanh','đỏ':'Đỏ','hồng':'Hồng','tím':'Tím','cam':'Cam','vàng':'Vàng','bạc':'Xám'};
+const fold=s=>String(s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d');
+const hay=p=>p._h||(p._h=fold([p.name,p.desc,p.colors.join(' '),CATS[p.cat],GEN[p.gender],Object.values(p.specs||{}).join(' ')].join(' ')));
+const match=(p,q)=>fold(q).split(/\s+/).filter(Boolean).every(w=>(' '+hay(p).replace(/[^a-z0-9]+/g,' ')).includes(' '+w));
+const genL=p=>p.cat==='tre-em'?'trẻ em':GEN[p.gender].toLowerCase();
 const STL={cho_xac_nhan:'Chờ xác nhận',da_xac_nhan:'Đã xác nhận',dang_giao:'Đang giao',hoan_thanh:'Hoàn thành',da_huy:'Đã huỷ'};
 const FREE=1000000;
 let PRODUCTS=null,META=null;
@@ -35,15 +44,15 @@ addEventListener('keydown',e=>{if(e.key==='Escape')closeLayer();
 const head=t=>`<header><h2>${t}</h2><button class="icbtn" data-close aria-label="Đóng">${ic('x')}</button></header>`;
 
 /* menu */
-$('#menuBtn').onclick=()=>openLayer('drawer left',head('Menu')+`<nav class="body" aria-label="Menu"><div style="display:grid">${[['/san-pham?gender=nam','Giày nam'],['/san-pham?gender=nu','Giày nữ'],['/san-pham?cat=sneaker','Sneaker'],['/san-pham?cat=chay-bo','Chạy bộ'],['/san-pham?cat=giay-da','Giày da'],['/san-pham?cat=sandal','Sandal'],['/san-pham?sort=sale','Sale']].map(([h,t])=>`<a href="${h}" data-link style="font:700 32px/1 var(--fd);text-transform:uppercase;padding:14px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center">${t}${ic('arrow')}</a>`).join('')}</div>
+$('#menuBtn').onclick=()=>openLayer('drawer left',head('Menu')+`<nav class="body" aria-label="Menu"><div style="display:grid">${[['/san-pham?gender=nam','Giày nam'],['/san-pham?gender=nu','Giày nữ'],['/san-pham?cat=sneaker','Sneaker'],['/san-pham?cat=chay-bo','Chạy bộ'],['/san-pham?cat=giay-da','Giày da'],['/san-pham?cat=sandal','Sandal'],['/san-pham?cat=the-thao','Thể thao'],['/san-pham?cat=boot','Boot'],['/san-pham?cat=giay-luoi','Giày lười'],['/san-pham?cat=dep','Dép'],['/san-pham?cat=tre-em','Trẻ em'],['/san-pham?sale=1','Sale']].map(([h,t])=>`<a href="${h}" data-link style="font:700 32px/1 var(--fd);text-transform:uppercase;padding:14px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center">${t}${ic('arrow')}</a>`).join('')}</div>
  <div style="display:grid;gap:4px;margin-top:24px"><a href="/tra-cuu" data-link style="display:flex;gap:12px;align-items:center;min-height:48px">${ic('box')}Tra cứu đơn hàng</a><a href="/huong-dan-chon-size" data-link style="display:flex;gap:12px;align-items:center;min-height:48px">${ic('ruler')}Hướng dẫn chọn size</a><a href="/lien-he" data-link style="display:flex;gap:12px;align-items:center;min-height:48px">${ic('phone')}Liên hệ</a></div></nav>`,'Menu');
 
 /* search */
 $('#searchBtn').onclick=openSearch;
 async function openSearch(){const d=openLayer('sheet',`<div class="wrap"><form class="sbox" role="search" id="sf">${ic('search')}<input id="sq" type="search" autofocus placeholder="Tìm giày, màu, kiểu dáng…" aria-label="Tìm sản phẩm" autocomplete="off" enterkeyhint="search"><button type="button" class="icbtn" data-close aria-label="Đóng tìm kiếm">${ic('x')}</button></form><div id="sr"></div></div>`,'Tìm kiếm');
  const ps=await loadP();const sr=$('#sr',d);
- const draw=q=>{q=q.trim().toLowerCase();if(!q){sr.innerHTML=`<div class="sugg"><span class="eyebrow" style="width:100%;margin-bottom:4px">Tìm nhiều</span>${['Chạy bộ','Trắng','Sandal','Da','Đen'].map(t=>`<button type="button" class="chip" data-q="${t}">${t}</button>`).join('')}</div><div class="sres">${ps.filter(p=>p.featured).slice(0,4).map(card).join('')}</div>`}
-  else{const r=ps.filter(p=>(p.name+' '+p.desc+' '+p.colors.join(' ')+' '+CATS[p.cat]).toLowerCase().includes(q));
+ const draw=q=>{q=q.trim().toLowerCase();if(!q){sr.innerHTML=`<div class="sugg"><span class="eyebrow" style="width:100%;margin-bottom:4px">Tìm nhiều</span>${['Chạy bộ','Trắng','Boot','Giày lười','Trẻ em','Đen'].map(t=>`<button type="button" class="chip" data-q="${t}">${t}</button>`).join('')}</div><div class="sres">${ps.filter(p=>p.featured).slice(0,4).map(card).join('')}</div>`}
+  else{const r=ps.filter(p=>match(p,q));
    sr.innerHTML=`<p class="muted small" style="margin:16px 0 0" aria-live="polite">${r.length} kết quả cho “${esc(q)}”</p><div class="sres">${r.slice(0,8).map(card).join('')||'<p>Không thấy sản phẩm phù hợp. Thử từ khoá khác như “chạy bộ”, “da”.</p>'}</div>${r.length>8?`<a class="btn ghost sm" href="/san-pham?q=${encodeURIComponent(q)}" data-link style="margin-bottom:32px">Xem tất cả ${r.length} kết quả</a>`:''}`}
   $$('[data-q]',sr).forEach(b=>b.onclick=()=>{$('#sq').value=b.dataset.q;draw(b.dataset.q)});wireCards(sr)};
  $('#sq').oninput=e=>draw(e.target.value);$('#sf').onsubmit=e=>{e.preventDefault();closeLayer(true);go('/san-pham?q='+encodeURIComponent($('#sq').value))};draw('')}
@@ -70,10 +79,10 @@ async function openCart(added){openCart.added=added===true;let d=$('#layer .draw
 /* product card */
 const card=p=>{const sz=p.sizes;return `<div class="pc"><div class="mwrap"><a href="/p/${p.slug}" data-link class="media" aria-label="${esc(p.name)}, ${vnd(p.price)}">
  <img loading="lazy" src="${p.img}" alt="${esc(p.name)}" width="900" height="900"><img loading="lazy" class="alt" src="${p.img2}" alt="" width="900" height="900">
- ${p.total===0?'<span class="tag out">Hết hàng</span>':p.old?`<span class="tag sale">−${pct(p)}%</span>`:p.featured?'<span class="tag">Bán chạy</span>':''}</a>
+ ${p.total===0?'<span class="tag out">Hết hàng</span>':p.old?`<span class="tag sale">Sale −${pct(p)}%</span>`:p.isNew?'<span class="tag new">Mới</span>':p.featured?'<span class="tag">Bán chạy</span>':''}</a>
  ${p.total?`<div class="quick"><p>Thêm nhanh · ${esc(p.colors[0])}</p><div class="qs">${sz.map(s=>`<button data-qa="${p.id}" data-s="${s}" ${p.stock[p.colors[0]][s]>0?'':'disabled'} aria-label="Thêm size ${s} vào giỏ">${s}</button>`).join('')}</div></div>`:''}</div>
- <a href="/p/${p.slug}" data-link class="info" tabindex="-1"><h3>${esc(p.name)}</h3><span class="sub">${CATS[p.cat]} ${GEN[p.gender].toLowerCase()} · ${p.colors.length} màu</span>${priceH(p)}
- <span class="swatches" aria-hidden="true">${p.colors.slice(0,5).map(c=>`<i class="sw" style="background:${SW[c]||'#ccc'}"></i>`).join('')}</span></a></div>`};
+ <a href="/p/${p.slug}" data-link class="info" tabindex="-1"><h3>${esc(p.name)}</h3><span class="sub">${CATS[p.cat]} ${p.cat==='tre-em'?'':genL(p)} · ${p.colors.length} màu</span>${priceH(p)}
+ <span class="swatches" aria-hidden="true">${p.colors.slice(0,5).map(c=>`<i class="sw" style="background:${sw(c)}"></i>`).join('')}</span></a></div>`};
 function wireCards(root){$$('[data-qa]',root).forEach(b=>b.onclick=e=>{e.preventDefault();const p=PRODUCTS.find(x=>x.id==b.dataset.qa);cart.add({id:p.id,color:p.colors[0],size:+b.dataset.s,qty:1});openCart(true)})}
 
 
@@ -81,7 +90,7 @@ function wireCards(root){$$('[data-qa]',root).forEach(b=>b.onclick=e=>{e.prevent
 const SLIDES=[
  {img:'hero1',eb:'Bộ sưu tập Thu 2026 · Chạy bộ',h:'Đi theo<br>nhịp của bạn',p:'Đệm êm cả ngày, thoáng khí cho trời nóng ẩm. Phom rộng vừa cho chân người Việt.',c:[['/san-pham?cat=chay-bo','Giày chạy bộ'],['/san-pham','Xem tất cả']],alt:'Người chạy bộ mang giày NHỊP trên phố Sài Gòn lúc bình minh'},
  {img:'hero2',eb:'Sneaker nam & nữ',h:'Trắng sạch.<br>Đi cả ngày.',p:'Sneaker da tối giản, phối gì cũng hợp, từ giảng đường đến phố cổ.',c:[['/san-pham?cat=sneaker&gender=nam','Sneaker nam'],['/san-pham?cat=sneaker&gender=nu','Sneaker nữ']],alt:'Đôi bạn trẻ mang sneaker trắng dạo phố cổ Hà Nội'},
- {img:'hero3',eb:'Ưu đãi đơn đầu',h:'Giảm <span data-count="10">10</span>%<br>với WELCOME10',p:'Nhập mã WELCOME10 ở bước thanh toán, giảm tối đa 200.000đ. Kèm hàng sale đến 18%.',c:[['/san-pham?sort=sale','Săn sale ngay'],['/san-pham','Mua sắm']],alt:'Nhiều đôi giày chạy bộ nhiều màu trên nền cam'},
+ {img:'hero3',eb:'Ưu đãi đơn đầu',h:'Giảm <span data-count="10">10</span>%<br>với WELCOME10',p:'Nhập mã WELCOME10 ở bước thanh toán, giảm tối đa 200.000đ. Kèm hơn 30 mẫu đang sale đến 20%.',c:[['/san-pham?sale=1&sort=sale','Săn sale ngay'],['/san-pham','Mua sắm']],alt:'Nhiều đôi giày chạy bộ nhiều màu trên nền cam'},
  {img:'hero4',eb:'Giày da công sở',h:'Chỉn chu<br>từ bước đầu',p:'Da bò thật, đế cao su chống trơn, đủ êm cho cả ngày họp hành.',c:[['/san-pham?cat=giay-da','Xem giày da'],['/huong-dan-chon-size','Chọn size chuẩn']],alt:'Giày da nâu bước ra từ sảnh văn phòng'},
  {img:'hero5',eb:'Sandal · Đổi size 30 ngày',h:'Nhẹ chân<br>mùa nắng',p:'Sandal quai dán êm, đi biển hay dạo phố. Chưa vừa? Đổi size miễn phí trong 30 ngày.',c:[['/san-pham?cat=sandal','Xem sandal'],['/chinh-sach/doi-tra','Chính sách đổi trả']],alt:'Đôi chân mang sandal xanh navy trên bãi biển Đà Nẵng'}];
 const heroH=()=>`<section class="hero" id="hero" aria-roledescription="carousel" aria-label="Banner nổi bật" tabindex="-1">
@@ -117,35 +126,55 @@ let lastY=0;addEventListener('scroll',()=>{const y=scrollY;$('#hdr').classList.t
 const bump=()=>{const b=$('#cartBtn');b.classList.remove('bump');void b.offsetWidth;b.classList.add('bump')};
 
 /* ---------- pages ---------- */
+const rail=(t,href,items,id)=>items.length?`<section class="blk wrap railsec" style="padding-top:0"><div class="sechead"><h2 class="h2">${t}</h2><span class="railnav"><a class="link" href="${href}" data-link>Xem tất cả</a><button class="icbtn rp" aria-label="Cuộn trái" data-r="${id}" data-d="-1">${ic('arrow')}</button><button class="icbtn rn" aria-label="Cuộn phải" data-r="${id}" data-d="1">${ic('arrow')}</button></span></div><div class="rail" id="${id}">${items.map(card).join('')}</div></section>`:'';
+const wireRails=root=>$$('[data-r]',root).forEach(b=>b.onclick=()=>{const r=$('#'+b.dataset.r);r.scrollBy({left:b.dataset.d*r.clientWidth*.8,behavior:RM?'auto':'smooth'})});
 async function home(){const ps=await loadP();document.title='NHỊP – Giày Việt cho mỗi bước chân';
- const catImg={sneaker:'p1','chay-bo':'p9','giay-da':'p11',sandal:'p14'};
+ const catImg={sneaker:'p1','chay-bo':'p9','giay-da':'p11',sandal:'p15','the-thao':'p17',boot:'p18',dep:'p19','giay-luoi':'p20','tre-em':'p21'};
+ for(const k in CATS){const f=ps.find(p=>p.cat===k&&p.id>16)||ps.find(p=>p.cat===k);if(f&&!['sneaker','chay-bo','giay-da','sandal'].includes(k))catImg[k]=f.img.replace('/img/','').replace('.webp','')}
+ const byRank=a=>[...a].sort((x,y)=>x.rank-y.rank);
  app.innerHTML=`${heroH()}
  <div class="wrap"><div class="trust">${[['truck','Freeship từ 1 triệu','Giao 1–5 ngày toàn quốc'],['swap','Đổi size <span data-count="30">30</span> ngày','Miễn phí đổi lần đầu'],['cash','Thanh toán COD','Kiểm tra hàng rồi trả tiền'],['shield','Bảo hành keo 6 tháng','Bong keo, sứt chỉ sửa free']].map(([i,a,b])=>`<div>${ic(i)}<p style="margin:0"><b>${a}</b><span>${b}</span></p></div>`).join('')}</div></div>
- <section class="blk wrap"><div class="sechead"><h2 class="h2">Mua theo dòng</h2></div><div class="cats">${Object.entries(CATS).map(([k,v])=>`<a class="cat" href="/san-pham?cat=${k}" data-link><img loading="lazy" src="/img/${catImg[k]}.webp" alt="" width="900" height="900"><span>${v}</span><i>${ic('arrow')}</i></a>`).join('')}</div></section>
- <section class="blk wrap" style="padding-top:0"><div class="sechead"><h2 class="h2">Bán chạy tuần này</h2><a class="link" href="/san-pham" data-link>Xem tất cả</a></div><div class="grid">${ps.filter(p=>p.featured).slice(0,8).map(card).join('')}</div></section>
- <section class="wrap"><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:8px">
+ <section class="blk wrap"><div class="sechead"><h2 class="h2">Mua theo dòng</h2><span class="muted">${ps.length} mẫu · ${Object.keys(CATS).length} dòng</span></div><div class="cats cats9">${Object.entries(CATS).map(([k,v])=>`<a class="cat" href="/san-pham?cat=${k}" data-link><img loading="lazy" src="/img/${catImg[k]}.webp" alt="" width="900" height="900"><span>${v}<small>${ps.filter(p=>p.cat===k).length} mẫu</small></span><i>${ic('arrow')}</i></a>`).join('')}</div></section>
+ ${rail('Bán chạy tuần này','/san-pham?sort=hot',byRank(ps.filter(p=>p.featured)).slice(0,12),'r-hot')}
+ ${rail('Hàng mới về','/san-pham?sort=new',ps.filter(p=>p.isNew).sort((a,b)=>b.id-a.id).slice(0,12),'r-new')}
+ <section class="wrap"><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:8px">
   <a href="/san-pham?gender=nam" data-link class="cat" style="aspect-ratio:4/3"><img loading="lazy" src="/img/p4.webp" alt="" width="900" height="900"><span>Giày nam</span><i>${ic('arrow')}</i></a>
-  <a href="/san-pham?gender=nu" data-link class="cat" style="aspect-ratio:4/3"><img loading="lazy" src="/img/p6.webp" alt="" width="900" height="900"><span>Giày nữ</span><i>${ic('arrow')}</i></a></div></section>
- <section class="blk wrap"><div class="sechead"><h2 class="h2">Đang giảm giá</h2><a class="link" href="/san-pham?sort=sale" data-link>Xem tất cả</a></div><div class="grid">${ps.filter(p=>p.old).slice(0,4).map(card).join('')}</div></section>`;wireCards(app);initHero()}
+  <a href="/san-pham?gender=nu" data-link class="cat" style="aspect-ratio:4/3"><img loading="lazy" src="/img/p6.webp" alt="" width="900" height="900"><span>Giày nữ</span><i>${ic('arrow')}</i></a>
+  <a href="/san-pham?cat=tre-em" data-link class="cat" style="aspect-ratio:4/3"><img loading="lazy" src="/img/${catImg['tre-em']}.webp" alt="" width="900" height="900"><span>Trẻ em</span><i>${ic('arrow')}</i></a></div></section>
+ ${rail('Đang giảm giá','/san-pham?sale=1&sort=sale',[...ps.filter(p=>p.old)].sort((a,b)=>pct(b)-pct(a)).slice(0,12),'r-sale')}
+ ${Object.entries(CATS).map(([k,v])=>rail(v,'/san-pham?cat='+k,byRank(ps.filter(p=>p.cat===k)).slice(0,10),'r-'+k)).join('')}`;wireCards(app);wireRails(app);initHero()}
 
-async function list(){const ps=await loadP();const q=new URLSearchParams(location.search);let st={q:q.get('q')||'',cat:q.get('cat')||'',gender:q.get('gender')||'',size:q.get('size')||'',sort:q.get('sort')||'',stock:q.get('stock')||''};
- const title=()=>st.q?`“${esc(st.q)}”`:st.cat?CATS[st.cat]:st.gender?'Giày '+GEN[st.gender].toLowerCase():st.sort==='sale'?'Đang giảm giá':'Tất cả giày';
+async function list(){const ps=await loadP();const q=new URLSearchParams(location.search);const K=['q','cat','gender','size','color','price','sale','stock','sort'];const blank=()=>Object.fromEntries(K.map(k=>[k,'']));let st=blank();K.forEach(k=>st[k]=q.get(k)||'');let lim=24;
+ const PR=[['','Mọi mức giá'],['0-500','Dưới 500k'],['500-1000','500k – 1 triệu'],['1000-1500','1 – 1,5 triệu'],['1500-9999','Trên 1,5 triệu']];
+ const fams=[...new Set(ps.flatMap(p=>p.colors.map(c=>FAM[fam(c)]).filter(Boolean)))];
+ const sizes=[...new Set(ps.flatMap(p=>p.sizes))].sort((a,b)=>a-b);
+ const title=()=>st.q?`“${esc(st.q)}”`:st.cat?CATS[st.cat]:st.gender?'Giày '+GEN[st.gender].toLowerCase():st.sale?'Đang giảm giá':st.sort==='new'?'Hàng mới về':'Tất cả giày';
  app.innerHTML=`<div class="wrap"><div class="lhead"><h1 class="h2" id="lt"></h1></div>
- <div class="filters" role="toolbar" aria-label="Bộ lọc">${[['','Tất cả'],...Object.entries(CATS)].map(([k,v])=>`<button class="chip" data-cat="${k}">${v}</button>`).join('')}<span class="sep"></span>
- <select class="chip" id="g" aria-label="Giới tính"><option value="">Nam & nữ</option><option value="nam">Nam</option><option value="nu">Nữ</option></select>
- <select class="chip" id="sz" aria-label="Size"><option value="">Mọi size</option>${[35,36,37,38,39,40,41,42,43,44,45].map(s=>`<option value="${s}">Size ${s}</option>`).join('')}</select>
- <button class="chip" id="stk">Còn hàng</button>
- <select class="chip" id="so" aria-label="Sắp xếp"><option value="">Nổi bật</option><option value="asc">Giá thấp → cao</option><option value="desc">Giá cao → thấp</option><option value="sale">Giảm nhiều nhất</option></select></div>
- <div class="grid" id="res" aria-live="polite"></div></div>`;
- const draw=()=>{let r=ps.filter(p=>(!st.cat||p.cat===st.cat)&&(!st.gender||p.gender===st.gender||p.gender==='unisex')&&(!st.q||(p.name+' '+p.desc+' '+p.colors.join(' ')+' '+CATS[p.cat]).toLowerCase().includes(st.q.toLowerCase()))&&(!st.size||inStock(p,st.size))&&(!st.stock||p.total>0));
-  if(st.sort==='asc')r.sort((a,b)=>a.price-b.price);if(st.sort==='desc')r.sort((a,b)=>b.price-a.price);if(st.sort==='sale')r.sort((a,b)=>pct(b)-pct(a));
+ <div class="filters" role="toolbar" aria-label="Bộ lọc">${[['','Tất cả'],...Object.entries(CATS)].map(([k,v])=>`<button class="chip" data-cat="${k}">${v}</button>`).join('')}</div>
+ <div class="filters f2" role="toolbar" aria-label="Lọc thêm"><label class="sbx">${ic('search')}<input id="lq" type="search" placeholder="Tìm tên, màu…" aria-label="Tìm trong danh sách"></label>
+ <select class="chip" id="g" aria-label="Giới tính"><option value="">Nam & nữ</option><option value="nam">Nam</option><option value="nu">Nữ</option><option value="unisex">Chỉ unisex</option></select>
+ <select class="chip" id="sz" aria-label="Size"><option value="">Mọi size</option>${sizes.map(s=>`<option value="${s}">Size ${s}</option>`).join('')}</select>
+ <select class="chip" id="co" aria-label="Màu"><option value="">Mọi màu</option>${fams.map(f=>`<option>${f}</option>`).join('')}</select>
+ <select class="chip" id="pr" aria-label="Khoảng giá">${PR.map(([v,l])=>`<option value="${v}">${l}</option>`).join('')}</select>
+ <button class="chip" id="sal">Sale</button><button class="chip" id="stk">Còn hàng</button>
+ <select class="chip" id="so" aria-label="Sắp xếp"><option value="">Nổi bật</option><option value="new">Mới nhất</option><option value="hot">Bán chạy</option><option value="asc">Giá thấp → cao</option><option value="desc">Giá cao → thấp</option><option value="sale">Giảm nhiều nhất</option></select></div>
+ <div class="grid" id="res" aria-live="polite"></div><div class="more" id="more"></div></div>`;
+ const filt=()=>{const [lo,hi]=st.price?st.price.split('-').map(x=>x*1000):[0,1e12];
+  let r=ps.filter(p=>(!st.cat||p.cat===st.cat)&&(!st.gender||(st.gender==='unisex'?p.gender==='unisex':(p.gender===st.gender||p.gender==='unisex')&&p.cat!=='tre-em'))&&(!st.q||match(p,st.q))&&(!st.size||inStock(p,st.size))&&(!st.color||p.colors.some(c=>FAM[fam(c)]===st.color))&&p.price>=lo&&p.price<hi&&(!st.sale||p.old)&&(!st.stock||p.total>0));
+  const S={asc:(a,b)=>a.price-b.price,desc:(a,b)=>b.price-a.price,sale:(a,b)=>pct(b)-pct(a),new:(a,b)=>(b.isNew-a.isNew)||b.id-a.id,hot:(a,b)=>(b.featured-a.featured)||a.rank-b.rank,'':(a,b)=>(b.featured-a.featured)||a.rank-b.rank};
+  return r.sort(S[st.sort]||S['']) };
+ const draw=(keep)=>{if(!keep)lim=24;const r=filt();
   $('#lt').innerHTML=`${title()}<span class="count">${r.length} sản phẩm</span>`;document.title=$('#lt').firstChild.textContent+' – NHỊP';
-  $('#res').innerHTML=r.length?r.map(card).join(''):`<div class="empty"><h2>Chưa có đôi nào khớp</h2><p class="muted">Thử bỏ bớt bộ lọc hoặc đổi size.</p><button class="btn ghost" id="clr">Xoá bộ lọc</button></div>`;
-  wireCards($('#res'));$('#clr')&&($('#clr').onclick=()=>{st={q:'',cat:'',gender:'',size:'',sort:'',stock:''};sync();draw()});
+  $('#res').innerHTML=r.length?r.slice(0,lim).map(card).join(''):`<div class="empty"><h2>Chưa có đôi nào khớp</h2><p class="muted">Thử bỏ bớt bộ lọc hoặc đổi size.</p><button class="btn ghost" id="clr">Xoá bộ lọc</button></div>`;
+  $('#more').innerHTML=r.length>lim?`<p class="muted small">Đang xem ${lim} / ${r.length}</p><button class="btn ghost" id="mo">Xem thêm ${Math.min(24,r.length-lim)} mẫu</button>`:r.length>24?`<p class="muted small">Đã xem hết ${r.length} mẫu</p>`:'';
+  $('#mo')&&($('#mo').onclick=()=>{lim+=24;draw(true)});
+  wireCards($('#res'));keep&&reveal($('#res'));$('#clr')&&($('#clr').onclick=()=>{st=blank();sync();draw()});
   const u=new URLSearchParams(Object.entries(st).filter(([,v])=>v));history.replaceState({},'','/san-pham'+(u+''?'?'+u:''))};
- const sync=()=>{$$('[data-cat]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.cat===st.cat));$('#g').value=st.gender;$('#sz').value=st.size;$('#so').value=st.sort;$('#stk').setAttribute('aria-pressed',!!st.stock)};
+ const sync=()=>{$$('[data-cat]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.cat===st.cat));$('#g').value=st.gender;$('#sz').value=st.size;$('#co').value=st.color;$('#pr').value=st.price;$('#so').value=st.sort;$('#lq').value=st.q;$('#stk').setAttribute('aria-pressed',!!st.stock);$('#sal').setAttribute('aria-pressed',!!st.sale)};
  $$('[data-cat]').forEach(b=>b.onclick=()=>{st.cat=b.dataset.cat;sync();draw()});
- $('#g').onchange=e=>{st.gender=e.target.value;draw()};$('#sz').onchange=e=>{st.size=e.target.value;draw()};$('#so').onchange=e=>{st.sort=e.target.value;draw()};$('#stk').onclick=()=>{st.stock=st.stock?'':'1';sync();draw()};sync();draw()}
+ [['g','gender'],['sz','size'],['co','color'],['pr','price'],['so','sort']].forEach(([i,k])=>$('#'+i).onchange=e=>{st[k]=e.target.value;draw()});
+ let tq;$('#lq').oninput=e=>{clearTimeout(tq);tq=setTimeout(()=>{st.q=e.target.value.trim();draw()},200)};
+ $('#stk').onclick=()=>{st.stock=st.stock?'':'1';sync();draw()};$('#sal').onclick=()=>{st.sale=st.sale?'':'1';sync();draw()};sync();draw()}
 
 const SIZEROWS=[[22.5,35],[23,36],[23.5,37],[24,38],[24.5,39],[25,40],[25.5,41],[26,42],[27,43],[27.5,44],[28,45]];
 const SIZEGUIDE=`<p class="muted" style="margin-top:0">Đo chân tại nhà trong 2 phút, đối chiếu bảng để chọn size EU.</p><div class="steps-measure"><div><b>01</b>Đặt giấy A4 sát tường, đứng thẳng, gót chạm tường. Đo buổi chiều, mang tất.</div><div><b>02</b>Đánh dấu đầu ngón dài nhất, đo từ mép giấy (cm).</div><div><b>03</b>Đo cả hai chân, lấy số lớn hơn rồi tra bảng.</div></div>
@@ -161,23 +190,23 @@ function reviewsH(p){const seed=p.id*7,avg=(4.3+(seed%6)/10).toFixed(1),n=12+see
 
 async function detail(slug){let p;try{p=await api('/api/products/'+slug)}catch{return notfound()}const ps=await loadP();document.title=p.name+' – NHỊP';
  let color=p.colors.find(c=>p.sizes.some(s=>p.stock[c][s]>0))||p.colors[0],size=null,qty=1;
- const rel=ps.filter(x=>x.id!==p.id&&(x.cat===p.cat||x.gender===p.gender)).slice(0,4);
+ const sc=x=>(x.cat===p.cat?3:0)+(x.gender===p.gender?1:0)+(Math.abs(x.price-p.price)<400000?1:0)+(x.colors.some(c=>p.colors.includes(c))?1:0);const rel=ps.filter(x=>x.id!==p.id).map(x=>[sc(x),x]).sort((a,b)=>b[0]-a[0]||a[1].rank-b[1].rank).slice(0,8).map(x=>x[1]);
  app.innerHTML=`<div class="wrap fade"><nav class="crumbs" aria-label="Breadcrumb"><a href="/" data-link>Trang chủ</a> / <a href="/san-pham?cat=${p.cat}" data-link>${CATS[p.cat]}</a> / <span aria-current="page">${esc(p.name)}</span></nav>
  <div class="pdp"><div><div class="gal" id="gal"><figure><img src="${p.img}" alt="${esc(p.name)}, ảnh chính" width="900" height="900"></figure><figure><img src="${p.img2}" alt="${esc(p.name)}, cận chất liệu" width="900" height="900" loading="lazy"></figure><figure><img src="${p.img}" alt="${esc(p.name)}, góc đế" width="900" height="900" loading="lazy" style="transform:scaleX(-1)"></figure></div><div class="gdots" aria-hidden="true"><i class="on"></i><i></i><i></i></div></div>
- <div class="buy"><p class="eyebrow">${CATS[p.cat]} · ${GEN[p.gender]}</p><h1>${esc(p.name)}</h1>${priceH(p)}${p.old?` <span class="tag sale" style="position:static;display:inline-block;margin-left:8px;border:1px solid var(--line)">−${pct(p)}%</span>`:''}
+ <div class="buy"><p class="eyebrow">${CATS[p.cat]} · ${p.cat==='tre-em'?'Trẻ em':GEN[p.gender]}${p.isNew?' · Mới':''}</p><h1>${esc(p.name)}</h1>${priceH(p)}${p.old?` <span class="tag sale" style="position:static;display:inline-block;margin-left:8px;border:1px solid var(--line)">−${pct(p)}%</span>`:''}
  <a href="#reviews" class="rating"><span class="stars">${Array.from({length:5},()=>ic('star')).join('')}</span> Xem đánh giá</a>
  <div class="opt"><div class="optlab"><span>Màu <span class="muted" id="cn"></span></span></div><div class="colors" id="cols"></div></div>
  <div class="opt"><div class="optlab"><span>Chọn size (EU)</span><button class="link small" id="sg" style="display:flex;gap:6px;align-items:center;min-height:44px">${ic('ruler')}Hướng dẫn chọn size</button></div><div class="sizes" id="szs" role="group" aria-label="Size"></div><p class="err-inline" id="sze" role="alert" hidden>Vui lòng chọn size</p></div>
  <div class="stock" id="stk" aria-live="polite"></div>
  <div class="actions" id="act"><button class="btn block" id="add">${ic('bag')}Thêm vào giỏ</button><button class="btn ghost block" id="buy">Mua ngay</button></div>
  <div class="perks"><div>${ic('truck')}<p style="margin:0"><b>Giao 1–5 ngày</b><span class="muted">Freeship đơn từ 1.000.000đ</span></p></div><div>${ic('swap')}<p style="margin:0"><b>Đổi size miễn phí 30 ngày</b><span class="muted">Chưa vừa? Đổi lần đầu không mất phí</span></p></div><div>${ic('cash')}<p style="margin:0"><b>COD, kiểm tra trước khi trả tiền</b><span class="muted">Hoặc chuyển khoản qua VietQR</span></p></div></div>
- <details class="acc" open><summary>Mô tả</summary><div class="bd">${esc(p.desc)}</div></details><details class="acc"><summary>Chất liệu & bảo quản</summary><div class="bd">Lau bằng khăn ẩm, phơi nơi thoáng mát, tránh nắng gắt. Không giặt máy. Bảo hành keo, chỉ 6 tháng.</div></details></div></div>
+ <details class="acc" open><summary>Mô tả</summary><div class="bd">${esc(p.desc)}</div></details><details class="acc" open><summary>Thông số</summary><div class="bd"><dl class="specs">${Object.entries(p.specs||{}).map(([k,v])=>`<div><dt>${k}</dt><dd>${esc(v)}</dd></div>`).join('')}<div><dt>Size</dt><dd>${p.sizes[0]}–${p.sizes[p.sizes.length-1]} EU</dd></div><div><dt>Màu</dt><dd>${p.colors.map(esc).join(', ')}</dd></div></dl></div></details><details class="acc"><summary>Bảo quản & bảo hành</summary><div class="bd">Lau bằng khăn ẩm, phơi nơi thoáng mát, tránh nắng gắt. Không giặt máy. Bảo hành keo, chỉ 6 tháng.</div></details></div></div>
  ${reviewsH(p)}
- <section class="blk" style="padding-top:0"><div class="sechead"><h2 class="h2">Có thể bạn thích</h2></div><div class="grid">${rel.map(card).join('')}</div></section></div>
+ <section class="blk railsec" style="padding-top:0"><div class="sechead"><h2 class="h2">Có thể bạn thích</h2><span class="railnav"><a class="link" href="/san-pham?cat=${p.cat}" data-link>Xem dòng ${CATS[p.cat]}</a><button class="icbtn rp" aria-label="Cuộn trái" data-r="r-rel" data-d="-1">${ic('arrow')}</button><button class="icbtn rn" aria-label="Cuộn phải" data-r="r-rel" data-d="1">${ic('arrow')}</button></span></div><div class="rail" id="r-rel">${rel.map(card).join('')}</div></section></div>
  <div class="mbar" id="mbar"><div class="t"><b>${esc(p.name)}</b><span id="mbs">${vnd(p.price)}</span></div><button class="btn sm" id="madd">Thêm vào giỏ</button></div>`;
- wireCards(app);
+ wireCards(app);wireRails(app);
  const draw=()=>{$('#cn').textContent='· '+color;
-  $('#cols').innerHTML=p.colors.map(c=>`<button data-c="${esc(c)}" aria-pressed="${c===color}"><i class="sw" style="background:${SW[c]||'#ccc'}"></i>${esc(c)}</button>`).join('');
+  $('#cols').innerHTML=p.colors.map(c=>`<button data-c="${esc(c)}" aria-pressed="${c===color}"><i class="sw" style="background:${sw(c)}"></i>${esc(c)}</button>`).join('');
   $('#szs').innerHTML=p.sizes.map(s=>{const n=p.stock[color][s];return `<button class="sz" data-s="${s}" aria-pressed="${s===size}" ${n>0?'':'disabled'} aria-label="Size ${s}${n>0?n<=3?', chỉ còn '+n:'':', hết hàng'}">${s}${n>0&&n<=3?`<span class="low">${n}</span>`:''}</button>`}).join('');
   const left=size?p.stock[color][size]:p.sizes.reduce((a,s)=>a+p.stock[color][s],0);const k=$('#stk');
   if(!left){k.className='stock low';k.innerHTML='<i class="dot"></i>Màu này đã hết hàng, thử màu khác'}

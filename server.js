@@ -5,6 +5,7 @@ const DB_FILE=path.join(DATA_DIR,'db.json');
 const ADMIN_PASSWORD=process.env.ADMIN_PASSWORD||'';
 const SECRET=process.env.SESSION_SECRET||crypto.createHash('sha256').update('nhip:'+ADMIN_PASSWORD).digest('hex');
 let db; try{db=JSON.parse(fs.readFileSync(DB_FILE,'utf8'))}catch{db={stock:seedStock(),orders:[],seq:1000}}
+{const fresh=seedStock();let add=0;for(const k in fresh)if(!(k in db.stock)){db.stock[k]=fresh[k];add++}if(add)console.log('Bổ sung tồn kho',add,'biến thể')}
 function save(){const t=DB_FILE+'.tmp';fs.writeFileSync(t,JSON.stringify(db));fs.renameSync(t,DB_FILE)} save();
 const PROVINCES=['Hà Nội','TP. Hồ Chí Minh','Hải Phòng','Đà Nẵng','Cần Thơ','Huế','An Giang','Bắc Ninh','Cà Mau','Cao Bằng','Đắk Lắk','Điện Biên','Đồng Nai','Đồng Tháp','Gia Lai','Hà Tĩnh','Hưng Yên','Khánh Hòa','Lai Châu','Lâm Đồng','Lạng Sơn','Lào Cai','Nghệ An','Ninh Bình','Phú Thọ','Quảng Ngãi','Quảng Ninh','Quảng Trị','Sơn La','Tây Ninh','Thái Nguyên','Thanh Hóa','Tuyên Quang','Vĩnh Long'];
 const CODES={WELCOME10:{pct:10,max:200000,label:'Giảm 10% (tối đa 200.000đ)'},NHIP50K:{flat:50000,min:800000,label:'Giảm 50.000đ cho đơn từ 800.000đ'}};
@@ -72,6 +73,10 @@ app.get('/api/admin/stock',auth,(q,r)=>r.json(products.map(pub)));
 app.put('/api/admin/stock',auth,(q,r)=>{const {id,color,size,qty}=q.body;const p=products.find(x=>x.id===Number(id));const n=Number(qty);
   if(!p||!p.colors.includes(color)||!p.sizes.includes(Number(size))||!Number.isInteger(n)||n<0||n>9999)return r.status(400).json({error:'Dữ liệu không hợp lệ'});
   db.stock[`${p.id}|${color}|${Number(size)}`]=n;save();r.json({ok:true})});
+const BASE=process.env.PUBLIC_URL||'https://nhip-shoe-shop.onrender.com';
+app.get('/robots.txt',(q,r)=>r.type('text/plain').send(`User-agent: *\nAllow: /\nDisallow: /admin\nDisallow: /api/\nDisallow: /thanh-toan\nDisallow: /gio-hang\nSitemap: ${BASE}/sitemap.xml\n`));
+app.get('/sitemap.xml',(q,r)=>{const cats=[...new Set(products.map(p=>p.cat))];const u=['/','/san-pham',...cats.map(c=>'/san-pham?cat='+c),...products.map(p=>'/p/'+p.slug),'/huong-dan-chon-size','/chinh-sach/doi-tra','/chinh-sach/van-chuyen','/lien-he'];
+  r.type('application/xml').send('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+u.map(x=>`<url><loc>${BASE}${x.replace(/&/g,'&amp;')}</loc>${x.startsWith('/p/')?`<image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"><image:loc>${BASE}/img/${products.find(p=>'/p/'+p.slug===x).img}</image:loc></image:image>`:''}</url>`).join('')+'</urlset>')});
 app.get('/admin',(q,r)=>r.sendFile(path.join(__dirname,'public','admin.html')));
 app.get(/^\/(?!api|img).*/,(q,r)=>r.sendFile(path.join(__dirname,'public','index.html')));
 app.listen(process.env.PORT||3000,()=>console.log('NHỊP shop chạy cổng',process.env.PORT||3000));

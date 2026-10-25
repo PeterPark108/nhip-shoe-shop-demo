@@ -1,0 +1,3365 @@
+[
+{
+"id": 1,
+"slug": "nhip-office-strap",
+"name": "NHỊP Office Strap",
+"cat": "sneaker",
+"gender": "unisex",
+"price": 890000,
+"old": 1090000,
+"colors": [
+"Trắng",
+"Đen"
+],
+"img": "p1.webp",
+"desc": "Sneaker da quai dán, êm chân cả ngày, hợp đi làm và đi học.",
+"specs": {
+"Chất liệu": "Vải knit dệt liền",
+"Đế": "Cao su đúc nguyên khối",
+"Công nghệ": "Đệm gót EVA 2 lớp",
+"Phù hợp cho": "Phối đồ hằng ngày"
+},
+"featured": true,
+"isNew": false,
+"sizes": [
+36,
+37,
+38,
+39,
+40,
+41,
+42,
+43,
+44
+],
+"rank": 37
+},
+{
+"id": 2,
+"slug": "nhip-wave-white",
+"name": "NHỊP Wave Trắng",
+"cat": "sneaker",
+"gender": "nu",
+"price": 1190000,
+"old": null,
+"colors": [
+"Trắng",
+"Đen"
+],
+"img": "p2.webp",
+"desc": "Đế chunky lượn sóng, tăng chiều cao 5cm, phom ôm chân nữ.",
+"specs": {
+"Chất liệu": "Canvas 12oz",
+"Đế": "EVA + cao su",
+"Công nghệ": "Lót kháng khuẩn",
+"Phù hợp cho": "Du lịch, đi bộ nhẹ"
+},
+"featured": true,
+"isNew": false,
+"sizes": [
+35,
+36,
+37,
+38,
+39,
+40
+],
+"rank": 74
+},
+{
+"id": 3,
+"slug": "nhip-court-classic",
+"name": "NHỊP Court Classic",
+"cat": "sneaker",
+"gender": "nam",
+"price": 990000,
+"old": null,
+"colors": [
+"Trắng xám",
+"Đen"
+],
+"img": "p3.webp",
+"desc": "Giày court cổ điển, da tổng hợp dễ vệ sinh.",
+"specs": {
+"Chất liệu": "Da bò nappa",
+"Đế": "Cao su lưu hoá",
+"Công nghệ": "Lót OrthoLite thoáng khí",
+"Phù hợp cho": "Đi học, đi làm, dạo phố"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+39,
+40,
+41,
+42,
+43,
+44,
+45
+],
+"rank": 11
+},
+{
+"id": 4,
+"slug": "nhip-canvas-low-den",
+"name": "NHỊP Canvas Low Đen",
+"cat": "sneaker",
+"gender": "unisex",
+"price": 590000,
+"old": 690000,
+"colors": [
+"Đen",
+"Trắng"
+],
+"img": "p4.webp",
+"desc": "Canvas cổ thấp huyền thoại, đế cao su lưu hoá bền bỉ.",
+"specs": {
+"Chất liệu": "Da tổng hợp phủ PU",
+"Đế": "Cao su đúc nguyên khối",
+"Công nghệ": "Đệm gót EVA 2 lớp",
+"Phù hợp cho": "Phối đồ hằng ngày"
+},
+"featured": true,
+"isNew": false,
+"sizes": [
+36,
+37,
+38,
+39,
+40,
+41,
+42,
+43,
+44
+],
+"rank": 48
+},
+{
+"id": 5,
+"slug": "nhip-canvas-smile",
+"name": "NHỊP Canvas Smile",
+"cat": "sneaker",
+"gender": "unisex",
+"price": 650000,
+"old": null,
+"colors": [
+"Trắng kem",
+"Đen"
+],
+"img": "p5.webp",
+"desc": "Canvas trắng mũi cười, phối được mọi outfit.",
+"specs": {
+"Chất liệu": "Vải knit dệt liền",
+"Đế": "EVA + cao su",
+"Công nghệ": "Lót kháng khuẩn",
+"Phù hợp cho": "Du lịch, đi bộ nhẹ"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+36,
+37,
+38,
+39,
+40,
+41,
+42,
+43,
+44
+],
+"rank": 85
+},
+{
+"id": 6,
+"slug": "nhip-run-saigon",
+"name": "NHỊP Run Sài Gòn",
+"cat": "chay-bo",
+"gender": "nu",
+"price": 1490000,
+"old": 1690000,
+"colors": [
+"Tím",
+"Hồng"
+],
+"img": "p6.webp",
+"desc": "Giày chạy bộ đệm êm, upper lưới thoáng khí cho khí hậu nóng ẩm.",
+"specs": {
+"Chất liệu": "Lưới engineered mesh",
+"Đế": "Đế cao su carbon chống mòn",
+"Công nghệ": "Đệm NHỊP Foam phản hồi",
+"Phù hợp cho": "Chạy 5–21km, tập gym"
+},
+"featured": true,
+"isNew": false,
+"sizes": [
+35,
+36,
+37,
+38,
+39,
+40
+],
+"rank": 22
+},
+{
+"id": 7,
+"slug": "nhip-canvas-coral",
+"name": "NHỊP Canvas Coral",
+"cat": "sneaker",
+"gender": "nu",
+"price": 620000,
+"old": null,
+"colors": [
+"Cam san hô",
+"Đen"
+],
+"img": "p7.webp",
+"desc": "Màu cam san hô nổi bật, nhẹ và dễ đi.",
+"specs": {
+"Chất liệu": "Da bò nappa",
+"Đế": "Cao su đúc nguyên khối",
+"Công nghệ": "Đệm gót EVA 2 lớp",
+"Phù hợp cho": "Phối đồ hằng ngày"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+35,
+36,
+37,
+38,
+39,
+40
+],
+"rank": 59
+},
+{
+"id": 8,
+"slug": "nhip-retro-1975",
+"name": "NHỊP Retro 75",
+"cat": "sneaker",
+"gender": "unisex",
+"price": 750000,
+"old": null,
+"colors": [
+"Trắng sọc đỏ",
+"Đen"
+],
+"img": "p8.webp",
+"desc": "Cảm hứng giày vải retro thập niên 70, đế mỏng sát đất.",
+"specs": {
+"Chất liệu": "Da tổng hợp phủ PU",
+"Đế": "EVA + cao su",
+"Công nghệ": "Lót kháng khuẩn",
+"Phù hợp cho": "Du lịch, đi bộ nhẹ"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+36,
+37,
+38,
+39,
+40,
+41,
+42,
+43,
+44
+],
+"rank": 96
+},
+{
+"id": 9,
+"slug": "nhip-run-hanoi",
+"name": "NHỊP Run Hà Nội",
+"cat": "chay-bo",
+"gender": "nam",
+"price": 1690000,
+"old": null,
+"colors": [
+"Xanh navy",
+"Đen"
+],
+"img": "p9.webp",
+"desc": "Đệm phản hồi cao cho cự ly 10–21km, đế chống trượt.",
+"specs": {
+"Chất liệu": "Lưới engineered mesh",
+"Đế": "Đế cao su carbon chống mòn",
+"Công nghệ": "Đệm NHỊP Foam phản hồi",
+"Phù hợp cho": "Chạy 5–21km, tập gym"
+},
+"featured": true,
+"isNew": false,
+"sizes": [
+39,
+40,
+41,
+42,
+43,
+44,
+45
+],
+"rank": 33
+},
+{
+"id": 10,
+"slug": "nhip-run-night",
+"name": "NHỊP Run Night",
+"cat": "chay-bo",
+"gender": "nam",
+"price": 1590000,
+"old": 1890000,
+"colors": [
+"Đen đỏ",
+"Đen"
+],
+"img": "p10.webp",
+"desc": "Chi tiết phản quang cho chạy đêm, ổn định gót chân.",
+"specs": {
+"Chất liệu": "Lưới dệt 2 lớp thoáng khí",
+"Đế": "Đế cao su bám ướt",
+"Công nghệ": "Đệm siêu nhẹ NHỊP Air",
+"Phù hợp cho": "Chạy hằng ngày"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+39,
+40,
+41,
+42,
+43,
+44,
+45
+],
+"rank": 70
+},
+{
+"id": 11,
+"slug": "nhip-oxford-den",
+"name": "NHỊP Oxford Da Bò Đen",
+"cat": "giay-da",
+"gender": "nam",
+"price": 1890000,
+"old": null,
+"colors": [
+"Đen",
+"Trắng"
+],
+"img": "p11.webp",
+"desc": "Oxford da bò thật, đế da khâu tay, chuẩn công sở.",
+"specs": {
+"Chất liệu": "Da lộn cao cấp",
+"Đế": "Đế TPR êm",
+"Công nghệ": "Đệm gót memory foam",
+"Phù hợp cho": "Công sở, sự kiện, tiệc cưới"
+},
+"featured": true,
+"isNew": false,
+"sizes": [
+39,
+40,
+41,
+42,
+43,
+44,
+45
+],
+"rank": 7
+},
+{
+"id": 12,
+"slug": "nhip-oxford-nau-do",
+"name": "NHỊP Oxford Nâu Đỏ",
+"cat": "giay-da",
+"gender": "nam",
+"price": 1990000,
+"old": 2290000,
+"colors": [
+"Nâu đỏ",
+"Đen"
+],
+"img": "p12.webp",
+"desc": "Da bò nhuộm patina nâu đỏ, sang trọng cho tiệc cưới.",
+"specs": {
+"Chất liệu": "Da bò thật nguyên tấm",
+"Đế": "Đế cao su chống trơn",
+"Công nghệ": "Lót da cừu hút ẩm",
+"Phù hợp cho": "Đi làm hằng ngày"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+39,
+40,
+41,
+42,
+43,
+44,
+45
+],
+"rank": 44
+},
+{
+"id": 13,
+"slug": "nhip-oxford-khac-hoa",
+"name": "NHỊP Oxford Khắc Hoạ Tiết",
+"cat": "giay-da",
+"gender": "nam",
+"price": 2490000,
+"old": null,
+"colors": [
+"Đen",
+"Trắng"
+],
+"img": "p13.webp",
+"desc": "Phiên bản giới hạn, đế khắc hoa văn thủ công.",
+"specs": {
+"Chất liệu": "Da bò nappa mềm",
+"Đế": "Đế da khâu Blake",
+"Công nghệ": "Đệm gót memory foam",
+"Phù hợp cho": "Công sở, sự kiện, tiệc cưới"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+39,
+40,
+41,
+42,
+43,
+44,
+45
+],
+"rank": 81
+},
+{
+"id": 14,
+"slug": "nhip-patina-art",
+"name": "NHỊP Patina Art",
+"cat": "giay-da",
+"gender": "unisex",
+"price": 2290000,
+"old": null,
+"colors": [
+"Tím xanh",
+"Nhiều màu"
+],
+"img": "p14.webp",
+"desc": "Da nhuộm patina nghệ thuật, mỗi đôi một màu duy nhất.",
+"specs": {
+"Chất liệu": "Da lộn cao cấp",
+"Đế": "Đế TPR êm",
+"Công nghệ": "Lót da cừu hút ẩm",
+"Phù hợp cho": "Đi làm hằng ngày"
+},
+"featured": true,
+"isNew": false,
+"sizes": [
+36,
+37,
+38,
+39,
+40,
+41,
+42,
+43,
+44
+],
+"rank": 18
+},
+{
+"id": 15,
+"slug": "nhip-sandal-cork",
+"name": "NHỊP Sandal Đế Bần",
+"cat": "sandal",
+"gender": "unisex",
+"price": 690000,
+"old": 790000,
+"colors": [
+"Xanh dương",
+"Nâu"
+],
+"img": "p15.webp",
+"desc": "Đế bần ôm vòm chân, hai quai khoá chỉnh được.",
+"specs": {
+"Chất liệu": "Quai da tổng hợp",
+"Đế": "Đế bần ôm vòm chân",
+"Công nghệ": "Footbed định hình",
+"Phù hợp cho": "Đi biển, dạo phố mùa hè"
+},
+"featured": true,
+"isNew": false,
+"sizes": [
+36,
+37,
+38,
+39,
+40,
+41,
+42,
+43,
+44
+],
+"rank": 55
+},
+{
+"id": 16,
+"slug": "nhip-sandal-trek",
+"name": "NHỊP Sandal Trek",
+"cat": "sandal",
+"gender": "nam",
+"price": 790000,
+"old": null,
+"colors": [
+"Đen xám",
+"Đen"
+],
+"img": "p16.webp",
+"desc": "Sandal quai dù đi phượt, chịu nước, đế bám đường.",
+"specs": {
+"Chất liệu": "Quai dù chịu nước",
+"Đế": "Đế EVA siêu nhẹ",
+"Công nghệ": "Khoá dán chỉnh nhanh",
+"Phù hợp cho": "Du lịch, đi phượt"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+39,
+40,
+41,
+42,
+43,
+44,
+45
+],
+"rank": 92
+},
+{
+"id": 17,
+"slug": "nhip-pho-co-low",
+"name": "NHỊP Phố Cổ Low",
+"cat": "sneaker",
+"gender": "unisex",
+"price": 850000,
+"old": null,
+"colors": [
+"Trắng xanh lá",
+"Trắng",
+"Đen"
+],
+"img": "p17.webp",
+"desc": "Sneaker Phố Cổ Low – vải knit dệt liền, eva + cao su. Trọng lượng nhẹ, phù hợp khí hậu nóng ẩm. Đổi size miễn phí trong 30 ngày nếu chưa vừa.",
+"specs": {
+"Chất liệu": "Vải knit dệt liền",
+"Đế": "EVA + cao su",
+"Công nghệ": "Lót kháng khuẩn",
+"Phù hợp cho": "Du lịch, đi bộ nhẹ"
+},
+"featured": false,
+"isNew": true,
+"sizes": [
+36,
+37,
+38,
+39,
+40,
+41,
+42,
+43,
+44
+],
+"rank": 29
+},
+{
+"id": 18,
+"slug": "nhip-ho-tay-knit",
+"name": "NHỊP Hồ Tây Knit",
+"cat": "sneaker",
+"gender": "nu",
+"price": 790000,
+"old": 950000,
+"colors": [
+"Be",
+"Hồng pastel",
+"Xám nhạt"
+],
+"img": "p18.webp",
+"desc": "Sneaker Hồ Tây Knit – canvas 12oz, cao su lưu hoá. Đường may chắc chắn, bảo hành keo chỉ 6 tháng. Phom rộng vừa cho bàn chân người Việt, đi cả ngày không bí.",
+"specs": {
+"Chất liệu": "Canvas 12oz",
+"Đế": "Cao su lưu hoá",
+"Công nghệ": "Lót OrthoLite thoáng khí",
+"Phù hợp cho": "Đi học, đi làm, dạo phố"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+35,
+36,
+37,
+38,
+39,
+40
+],
+"rank": 66
+},
+{
+"id": 19,
+"slug": "nhip-cho-lon-high",
+"name": "NHỊP Chợ Lớn High",
+"cat": "sneaker",
+"gender": "unisex",
+"price": 890000,
+"old": null,
+"colors": [
+"Đen",
+"Trắng",
+"Đỏ đô"
+],
+"img": "p19.webp",
+"desc": "Sneaker Chợ Lớn High – da bò nappa, cao su đúc nguyên khối. Đổi size miễn phí trong 30 ngày nếu chưa vừa. Thiết kế tối giản, dễ phối với quần jeans, kaki hay váy.",
+"specs": {
+"Chất liệu": "Da bò nappa",
+"Đế": "Cao su đúc nguyên khối",
+"Công nghệ": "Đệm gót EVA 2 lớp",
+"Phù hợp cho": "Phối đồ hằng ngày"
+},
+"featured": true,
+"isNew": false,
+"sizes": [
+36,
+37,
+38,
+39,
+40,
+41,
+42,
+43,
+44
+],
+"rank": 3
+},
+{
+"id": 20,
+"slug": "nhip-sai-gon-suede",
+"name": "NHỊP Sài Gòn Suede",
+"cat": "sneaker",
+"gender": "nam",
+"price": 1290000,
+"old": null,
+"colors": [
+"Nâu bò",
+"Xám",
+"Xanh rêu"
+],
+"img": "p20.webp",
+"desc": "Sneaker Sài Gòn Suede – da tổng hợp phủ pu, eva + cao su. Phom rộng vừa cho bàn chân người Việt, đi cả ngày không bí. Trọng lượng nhẹ, phù hợp khí hậu nóng ẩm.",
+"specs": {
+"Chất liệu": "Da tổng hợp phủ PU",
+"Đế": "EVA + cao su",
+"Công nghệ": "Lót kháng khuẩn",
+"Phù hợp cho": "Du lịch, đi bộ nhẹ"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+39,
+40,
+41,
+42,
+43,
+44,
+45
+],
+"rank": 40
+},
+{
+"id": 21,
+"slug": "nhip-may-platform",
+"name": "NHỊP Mây Platform",
+"cat": "sneaker",
+"gender": "nu",
+"price": 990000,
+"old": null,
+"colors": [
+"Trắng",
+"Kem",
+"Đen"
+],
+"img": "p21.webp",
+"desc": "Sneaker Mây Platform – vải knit dệt liền, cao su lưu hoá. Thiết kế tối giản, dễ phối với quần jeans, kaki hay váy. Đường may chắc chắn, bảo hành keo chỉ 6 tháng.",
+"specs": {
+"Chất liệu": "Vải knit dệt liền",
+"Đế": "Cao su lưu hoá",
+"Công nghệ": "Lót OrthoLite thoáng khí",
+"Phù hợp cho": "Đi học, đi làm, dạo phố"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+35,
+36,
+37,
+38,
+39,
+40
+],
+"rank": 77
+},
+{
+"id": 22,
+"slug": "nhip-lua-retro",
+"name": "NHỊP Lụa Retro",
+"cat": "sneaker",
+"gender": "nu",
+"price": 920000,
+"old": 1150000,
+"colors": [
+"Kem xanh",
+"Kem hồng"
+],
+"img": "p22.webp",
+"desc": "Sneaker Lụa Retro – canvas 12oz, cao su đúc nguyên khối. Trọng lượng nhẹ, phù hợp khí hậu nóng ẩm. Đổi size miễn phí trong 30 ngày nếu chưa vừa.",
+"specs": {
+"Chất liệu": "Canvas 12oz",
+"Đế": "Cao su đúc nguyên khối",
+"Công nghệ": "Đệm gót EVA 2 lớp",
+"Phù hợp cho": "Phối đồ hằng ngày"
+},
+"featured": false,
+"isNew": true,
+"sizes": [
+35,
+36,
+37,
+38,
+39,
+40
+],
+"rank": 14
+},
+{
+"id": 23,
+"slug": "nhip-do-thi-90",
+"name": "NHỊP Đô Thị 90",
+"cat": "sneaker",
+"gender": "nam",
+"price": 1190000,
+"old": null,
+"colors": [
+"Xám bạc",
+"Trắng xám",
+"Đen"
+],
+"img": "p23.webp",
+"desc": "Sneaker Đô Thị 90 – da bò nappa, eva + cao su. Đường may chắc chắn, bảo hành keo chỉ 6 tháng. Phom rộng vừa cho bàn chân người Việt, đi cả ngày không bí.",
+"specs": {
+"Chất liệu": "Da bò nappa",
+"Đế": "EVA + cao su",
+"Công nghệ": "Lót kháng khuẩn",
+"Phù hợp cho": "Du lịch, đi bộ nhẹ"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+39,
+40,
+41,
+42,
+43,
+44,
+45
+],
+"rank": 51
+},
+{
+"id": 24,
+"slug": "nhip-ben-nghe-slip",
+"name": "NHỊP Bến Nghé Slip",
+"cat": "sneaker",
+"gender": "unisex",
+"price": 560000,
+"old": null,
+"colors": [
+"Đen",
+"Trắng kem",
+"Xanh navy"
+],
+"img": "p24.webp",
+"desc": "Sneaker Bến Nghé Slip – da tổng hợp phủ pu, cao su lưu hoá. Đổi size miễn phí trong 30 ngày nếu chưa vừa. Thiết kế tối giản, dễ phối với quần jeans, kaki hay váy.",
+"specs": {
+"Chất liệu": "Da tổng hợp phủ PU",
+"Đế": "Cao su lưu hoá",
+"Công nghệ": "Lót OrthoLite thoáng khí",
+"Phù hợp cho": "Đi học, đi làm, dạo phố"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+36,
+37,
+38,
+39,
+40,
+41,
+42,
+43,
+44
+],
+"rank": 88
+},
+{
+"id": 25,
+"slug": "nhip-cau-rong",
+"name": "NHỊP Cầu Rồng",
+"cat": "sneaker",
+"gender": "nam",
+"price": 1090000,
+"old": null,
+"colors": [
+"Trắng đỏ",
+"Trắng xanh"
+],
+"img": "p25.webp",
+"desc": "Sneaker Cầu Rồng – vải knit dệt liền, cao su đúc nguyên khối. Phom rộng vừa cho bàn chân người Việt, đi cả ngày không bí. Trọng lượng nhẹ, phù hợp khí hậu nóng ẩm.",
+"specs": {
+"Chất liệu": "Vải knit dệt liền",
+"Đế": "Cao su đúc nguyên khối",
+"Công nghệ": "Đệm gót EVA 2 lớp",
+"Phù hợp cho": "Phối đồ hằng ngày"
+},
+"featured": true,
+"isNew": false,
+"sizes": [
+39,
+40,
+41,
+42,
+43,
+44,
+45
+],
+"rank": 25
+},
+{
+"id": 26,
+"slug": "nhip-vai-bo-moc",
+"name": "NHỊP Vải Bố Mộc",
+"cat": "sneaker",
+"gender": "unisex",
+"price": 490000,
+"old": 590000,
+"colors": [
+"Mộc",
+"Xanh rêu",
+"Đen"
+],
+"img": "p26.webp",
+"desc": "Sneaker Vải Bố Mộc – canvas 12oz, eva + cao su. Thiết kế tối giản, dễ phối với quần jeans, kaki hay váy. Đường may chắc chắn, bảo hành keo chỉ 6 tháng.",
+"specs": {
+"Chất liệu": "Canvas 12oz",
+"Đế": "EVA + cao su",
+"Công nghệ": "Lót kháng khuẩn",
+"Phù hợp cho": "Du lịch, đi bộ nhẹ"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+36,
+37,
+38,
+39,
+40,
+41,
+42,
+43,
+44
+],
+"rank": 62
+},
+{
+"id": 27,
+"slug": "nhip-leather-minimal",
+"name": "NHỊP Leather Minimal",
+"cat": "sneaker",
+"gender": "nam",
+"price": 1490000,
+"old": null,
+"colors": [
+"Trắng",
+"Đen"
+],
+"img": "p27.webp",
+"desc": "Sneaker Leather Minimal – da bò nappa, cao su lưu hoá. Trọng lượng nhẹ, phù hợp khí hậu nóng ẩm. Đổi size miễn phí trong 30 ngày nếu chưa vừa.",
+"specs": {
+"Chất liệu": "Da bò nappa",
+"Đế": "Cao su lưu hoá",
+"Công nghệ": "Lót OrthoLite thoáng khí",
+"Phù hợp cho": "Đi học, đi làm, dạo phố"
+},
+"featured": false,
+"isNew": true,
+"sizes": [
+39,
+40,
+41,
+42,
+43,
+44,
+45
+],
+"rank": 99
+},
+{
+"id": 28,
+"slug": "nhip-run-da-lat-trail",
+"name": "NHỊP Run Đà Lạt Trail",
+"cat": "chay-bo",
+"gender": "nam",
+"price": 1790000,
+"old": null,
+"colors": [
+"Xanh rêu cam",
+"Xám đen"
+],
+"img": "p28.webp",
+"desc": "Giày chạy bộ Run Đà Lạt Trail – lưới dệt 2 lớp thoáng khí, đế cao su bám ướt. Đường may chắc chắn, bảo hành keo chỉ 6 tháng. Phom rộng vừa cho bàn chân người Việt, đi cả ngày không bí.",
+"specs": {
+"Chất liệu": "Lưới dệt 2 lớp thoáng khí",
+"Đế": "Đế cao su bám ướt",
+"Công nghệ": "Đệm siêu nhẹ NHỊP Air",
+"Phù hợp cho": "Chạy hằng ngày"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+39,
+40,
+41,
+42,
+43,
+44,
+45
+],
+"rank": 36
+},
+{
+"id": 29,
+"slug": "nhip-run-mekong",
+"name": "NHỊP Run Mekong",
+"cat": "chay-bo",
+"gender": "nu",
+"price": 1390000,
+"old": null,
+"colors": [
+"Xanh mint",
+"Trắng hồng"
+],
+"img": "p29.webp",
+"desc": "Giày chạy bộ Run Mekong – knit co giãn, đế lugs bám địa hình. Đổi size miễn phí trong 30 ngày nếu chưa vừa. Thiết kế tối giản, dễ phối với quần jeans, kaki hay váy.",
+"specs": {
+"Chất liệu": "Knit co giãn",
+"Đế": "Đế lugs bám địa hình",
+"Công nghệ": "Tấm ổn định gót TPU",
+"Phù hợp cho": "Chạy đường mòn, leo dốc"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+35,
+36,
+37,
+38,
+39,
+40
+],
+"rank": 73
+},
+{
+"id": 30,
+"slug": "nhip-run-tempo",
+"name": "NHỊP Run Tempo",
+"cat": "chay-bo",
+"gender": "nam",
+"price": 1990000,
+"old": 2290000,
+"colors": [
+"Cam neon",
+"Đen trắng"
+],
+"img": "p30.webp",
+"desc": "Giày chạy bộ Run Tempo – lưới engineered mesh, đế cao su carbon chống mòn. Phom rộng vừa cho bàn chân người Việt, đi cả ngày không bí. Trọng lượng nhẹ, phù hợp khí hậu nóng ẩm.",
+"specs": {
+"Chất liệu": "Lưới engineered mesh",
+"Đế": "Đế cao su carbon chống mòn",
+"Công nghệ": "Đệm NHỊP Foam phản hồi",
+"Phù hợp cho": "Chạy 5–21km, tập gym"
+},
+"featured": true,
+"isNew": false,
+"sizes": [
+39,
+40,
+41,
+42,
+43,
+44,
+45
+],
+"rank": 10
+},
+{
+"id": 31,
+"slug": "nhip-run-nhe-200",
+"name": "NHỊP Run Nhẹ 200",
+"cat": "chay-bo",
+"gender": "nu",
+"price": 1190000,
+"old": 1490000,
+"colors": [
+"Hồng",
+"Tím",
+"Trắng"
+],
+"img": "p31.webp",
+"desc": "Giày chạy bộ Run Nhẹ 200 – lưới dệt 2 lớp thoáng khí, đế cao su bám ướt. Thiết kế tối giản, dễ phối với quần jeans, kaki hay váy. Đường may chắc chắn, bảo hành keo chỉ 6 tháng.",
+"specs": {
+"Chất liệu": "Lưới dệt 2 lớp thoáng khí",
+"Đế": "Đế cao su bám ướt",
+"Công nghệ": "Đệm siêu nhẹ NHỊP Air",
+"Phù hợp cho": "Chạy hằng ngày"
+},
+"featured": true,
+"isNew": false,
+"sizes": [
+35,
+36,
+37,
+38,
+39,
+40
+],
+"rank": 47
+},
+{
+"id": 32,
+"slug": "nhip-run-marathon-pro",
+"name": "NHỊP Run Marathon Pro",
+"cat": "chay-bo",
+"gender": "nam",
+"price": 2490000,
+"old": null,
+"colors": [
+"Trắng xanh dương",
+"Đen vàng"
+],
+"img": "p32.webp",
+"desc": "Giày chạy bộ Run Marathon Pro – knit co giãn, đế lugs bám địa hình. Trọng lượng nhẹ, phù hợp khí hậu nóng ẩm. Đổi size miễn phí trong 30 ngày nếu chưa vừa.",
+"specs": {
+"Chất liệu": "Knit co giãn",
+"Đế": "Đế lugs bám địa hình",
+"Công nghệ": "Tấm ổn định gót TPU",
+"Phù hợp cho": "Chạy đường mòn, leo dốc"
+},
+"featured": false,
+"isNew": true,
+"sizes": [
+39,
+40,
+41,
+42,
+43,
+44,
+45
+],
+"rank": 84
+},
+{
+"id": 33,
+"slug": "nhip-run-mua-phun",
+"name": "NHỊP Run Mưa Phùn",
+"cat": "chay-bo",
+"gender": "unisex",
+"price": 1590000,
+"old": null,
+"colors": [
+"Xám",
+"Đen"
+],
+"img": "p33.webp",
+"desc": "Giày chạy bộ Run Mưa Phùn – lưới engineered mesh, đế cao su carbon chống mòn. Đường may chắc chắn, bảo hành keo chỉ 6 tháng. Phom rộng vừa cho bàn chân người Việt, đi cả ngày không bí.",
+"specs": {
+"Chất liệu": "Lưới engineered mesh",
+"Đế": "Đế cao su carbon chống mòn",
+"Công nghệ": "Đệm NHỊP Foam phản hồi",
+"Phù hợp cho": "Chạy 5–21km, tập gym"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+36,
+37,
+38,
+39,
+40,
+41,
+42,
+43,
+44
+],
+"rank": 21
+},
+{
+"id": 34,
+"slug": "nhip-run-hang-ngay",
+"name": "NHỊP Run Hằng Ngày",
+"cat": "chay-bo",
+"gender": "nam",
+"price": 990000,
+"old": 1190000,
+"colors": [
+"Xanh navy",
+"Xám",
+"Đen"
+],
+"img": "p34.webp",
+"desc": "Giày chạy bộ Run Hằng Ngày – lưới dệt 2 lớp thoáng khí, đế cao su bám ướt. Đổi size miễn phí trong 30 ngày nếu chưa vừa. Thiết kế tối giản, dễ phối với quần jeans, kaki hay váy.",
+"specs": {
+"Chất liệu": "Lưới dệt 2 lớp thoáng khí",
+"Đế": "Đế cao su bám ướt",
+"Công nghệ": "Đệm siêu nhẹ NHỊP Air",
+"Phù hợp cho": "Chạy hằng ngày"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+39,
+40,
+41,
+42,
+43,
+44,
+45
+],
+"rank": 58
+},
+{
+"id": 35,
+"slug": "nhip-run-binh-minh",
+"name": "NHỊP Run Bình Minh",
+"cat": "chay-bo",
+"gender": "nu",
+"price": 1290000,
+"old": null,
+"colors": [
+"Cam đào",
+"Xanh da trời"
+],
+"img": "p35.webp",
+"desc": "Giày chạy bộ Run Bình Minh – knit co giãn, đế lugs bám địa hình. Phom rộng vừa cho bàn chân người Việt, đi cả ngày không bí. Trọng lượng nhẹ, phù hợp khí hậu nóng ẩm.",
+"specs": {
+"Chất liệu": "Knit co giãn",
+"Đế": "Đế lugs bám địa hình",
+"Công nghệ": "Tấm ổn định gót TPU",
+"Phù hợp cho": "Chạy đường mòn, leo dốc"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+35,
+36,
+37,
+38,
+39,
+40
+],
+"rank": 95
+},
+{
+"id": 36,
+"slug": "nhip-run-cloud-max",
+"name": "NHỊP Run Cloud Max",
+"cat": "chay-bo",
+"gender": "unisex",
+"price": 1890000,
+"old": null,
+"colors": [
+"Trắng",
+"Đen",
+"Be"
+],
+"img": "p36.webp",
+"desc": "Giày chạy bộ Run Cloud Max – lưới engineered mesh, đế cao su carbon chống mòn. Thiết kế tối giản, dễ phối với quần jeans, kaki hay váy. Đường may chắc chắn, bảo hành keo chỉ 6 tháng.",
+"specs": {
+"Chất liệu": "Lưới engineered mesh",
+"Đế": "Đế cao su carbon chống mòn",
+"Công nghệ": "Đệm NHỊP Foam phản hồi",
+"Phù hợp cho": "Chạy 5–21km, tập gym"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+36,
+37,
+38,
+39,
+40,
+41,
+42,
+43,
+44
+],
+"rank": 32
+},
+{
+"id": 37,
+"slug": "nhip-run-fansipan",
+"name": "NHỊP Run Fansipan",
+"cat": "chay-bo",
+"gender": "nu",
+"price": 1690000,
+"old": null,
+"colors": [
+"Tím than",
+"Xanh lục"
+],
+"img": "p37.webp",
+"desc": "Giày chạy bộ Run Fansipan – lưới dệt 2 lớp thoáng khí, đế cao su bám ướt. Trọng lượng nhẹ, phù hợp khí hậu nóng ẩm. Đổi size miễn phí trong 30 ngày nếu chưa vừa.",
+"specs": {
+"Chất liệu": "Lưới dệt 2 lớp thoáng khí",
+"Đế": "Đế cao su bám ướt",
+"Công nghệ": "Đệm siêu nhẹ NHỊP Air",
+"Phù hợp cho": "Chạy hằng ngày"
+},
+"featured": true,
+"isNew": true,
+"sizes": [
+35,
+36,
+37,
+38,
+39,
+40
+],
+"rank": 69
+},
+{
+"id": 38,
+"slug": "nhip-run-sprint",
+"name": "NHỊP Run Sprint",
+"cat": "chay-bo",
+"gender": "nam",
+"price": 1490000,
+"old": null,
+"colors": [
+"Đỏ",
+"Đen"
+],
+"img": "p38.webp",
+"desc": "Giày chạy bộ Run Sprint – knit co giãn, đế lugs bám địa hình. Đường may chắc chắn, bảo hành keo chỉ 6 tháng. Phom rộng vừa cho bàn chân người Việt, đi cả ngày không bí.",
+"specs": {
+"Chất liệu": "Knit co giãn",
+"Đế": "Đế lugs bám địa hình",
+"Công nghệ": "Tấm ổn định gót TPU",
+"Phù hợp cho": "Chạy đường mòn, leo dốc"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+39,
+40,
+41,
+42,
+43,
+44,
+45
+],
+"rank": 6
+},
+{
+"id": 39,
+"slug": "nhip-run-hoc-duong",
+"name": "NHỊP Run Học Đường",
+"cat": "chay-bo",
+"gender": "unisex",
+"price": 790000,
+"old": 890000,
+"colors": [
+"Đen trắng",
+"Xanh navy"
+],
+"img": "p39.webp",
+"desc": "Giày chạy bộ Run Học Đường – lưới engineered mesh, đế cao su carbon chống mòn. Đổi size miễn phí trong 30 ngày nếu chưa vừa. Thiết kế tối giản, dễ phối với quần jeans, kaki hay váy.",
+"specs": {
+"Chất liệu": "Lưới engineered mesh",
+"Đế": "Đế cao su carbon chống mòn",
+"Công nghệ": "Đệm NHỊP Foam phản hồi",
+"Phù hợp cho": "Chạy 5–21km, tập gym"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+36,
+37,
+38,
+39,
+40,
+41,
+42,
+43,
+44
+],
+"rank": 43
+},
+{
+"id": 40,
+"slug": "nhip-run-phan-quang",
+"name": "NHỊP Run Phản Quang",
+"cat": "chay-bo",
+"gender": "nu",
+"price": 1390000,
+"old": 1740000,
+"colors": [
+"Đen hồng",
+"Đen"
+],
+"img": "p40.webp",
+"desc": "Giày chạy bộ Run Phản Quang – lưới dệt 2 lớp thoáng khí, đế cao su bám ướt. Phom rộng vừa cho bàn chân người Việt, đi cả ngày không bí. Trọng lượng nhẹ, phù hợp khí hậu nóng ẩm.",
+"specs": {
+"Chất liệu": "Lưới dệt 2 lớp thoáng khí",
+"Đế": "Đế cao su bám ướt",
+"Công nghệ": "Đệm siêu nhẹ NHỊP Air",
+"Phù hợp cho": "Chạy hằng ngày"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+35,
+36,
+37,
+38,
+39,
+40
+],
+"rank": 80
+},
+{
+"id": 41,
+"slug": "nhip-derby-da-nau",
+"name": "NHỊP Derby Da Nâu",
+"cat": "giay-da",
+"gender": "nam",
+"price": 1690000,
+"old": null,
+"colors": [
+"Nâu",
+"Đen"
+],
+"img": "p41.webp",
+"desc": "Giày da Derby Da Nâu – da lộn cao cấp, đế tpr êm. Thiết kế tối giản, dễ phối với quần jeans, kaki hay váy. Đường may chắc chắn, bảo hành keo chỉ 6 tháng.",
+"specs": {
+"Chất liệu": "Da lộn cao cấp",
+"Đế": "Đế TPR êm",
+"Công nghệ": "Đệm gót memory foam",
+"Phù hợp cho": "Công sở, sự kiện, tiệc cưới"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+39,
+40,
+41,
+42,
+43,
+44,
+45
+],
+"rank": 17
+},
+{
+"id": 42,
+"slug": "nhip-brogue-ha-thanh",
+"name": "NHỊP Brogue Hà Thành",
+"cat": "giay-da",
+"gender": "nam",
+"price": 2190000,
+"old": 2490000,
+"colors": [
+"Nâu bò",
+"Đen"
+],
+"img": "p42.webp",
+"desc": "Giày da Brogue Hà Thành – da bò thật nguyên tấm, đế cao su chống trơn. Trọng lượng nhẹ, phù hợp khí hậu nóng ẩm. Đổi size miễn phí trong 30 ngày nếu chưa vừa.",
+"specs": {
+"Chất liệu": "Da bò thật nguyên tấm",
+"Đế": "Đế cao su chống trơn",
+"Công nghệ": "Lót da cừu hút ẩm",
+"Phù hợp cho": "Đi làm hằng ngày"
+},
+"featured": false,
+"isNew": true,
+"sizes": [
+39,
+40,
+41,
+42,
+43,
+44,
+45
+],
+"rank": 54
+},
+{
+"id": 43,
+"slug": "nhip-monk-strap-doi",
+"name": "NHỊP Monk Strap Đôi",
+"cat": "giay-da",
+"gender": "nam",
+"price": 2290000,
+"old": null,
+"colors": [
+"Đen",
+"Nâu sẫm"
+],
+"img": "p43.webp",
+"desc": "Giày da Monk Strap Đôi – da bò nappa mềm, đế da khâu blake. Đường may chắc chắn, bảo hành keo chỉ 6 tháng. Phom rộng vừa cho bàn chân người Việt, đi cả ngày không bí.",
+"specs": {
+"Chất liệu": "Da bò nappa mềm",
+"Đế": "Đế da khâu Blake",
+"Công nghệ": "Đệm gót memory foam",
+"Phù hợp cho": "Công sở, sự kiện, tiệc cưới"
+},
+"featured": true,
+"isNew": false,
+"sizes": [
+39,
+40,
+41,
+42,
+43,
+44,
+45
+],
+"rank": 91
+},
+{
+"id": 44,
+"slug": "nhip-chelsea-lich-lam",
+"name": "NHỊP Chelsea Lịch Lãm",
+"cat": "giay-da",
+"gender": "nam",
+"price": 2390000,
+"old": null,
+"colors": [
+"Nâu sẫm",
+"Đen"
+],
+"img": "p44.webp",
+"desc": "Giày da Chelsea Lịch Lãm – da lộn cao cấp, đế tpr êm. Đổi size miễn phí trong 30 ngày nếu chưa vừa. Thiết kế tối giản, dễ phối với quần jeans, kaki hay váy.",
+"specs": {
+"Chất liệu": "Da lộn cao cấp",
+"Đế": "Đế TPR êm",
+"Công nghệ": "Lót da cừu hút ẩm",
+"Phù hợp cho": "Đi làm hằng ngày"
+},
+"featured": true,
+"isNew": false,
+"sizes": [
+39,
+40,
+41,
+42,
+43,
+44,
+45
+],
+"rank": 28
+},
+{
+"id": 45,
+"slug": "nhip-mary-jane-cong-so",
+"name": "NHỊP Mary Jane Công Sở",
+"cat": "giay-da",
+"gender": "nu",
+"price": 990000,
+"old": null,
+"colors": [
+"Đen",
+"Đỏ đô",
+"Kem"
+],
+"img": "p45.webp",
+"desc": "Giày da Mary Jane Công Sở – da bò thật nguyên tấm, đế cao su chống trơn. Phom rộng vừa cho bàn chân người Việt, đi cả ngày không bí. Trọng lượng nhẹ, phù hợp khí hậu nóng ẩm.",
+"specs": {
+"Chất liệu": "Da bò thật nguyên tấm",
+"Đế": "Đế cao su chống trơn",
+"Công nghệ": "Đệm gót memory foam",
+"Phù hợp cho": "Công sở, sự kiện, tiệc cưới"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+35,
+36,
+37,
+38,
+39,
+40
+],
+"rank": 65
+},
+{
+"id": 46,
+"slug": "nhip-cao-got-mui-nhon",
+"name": "NHỊP Cao Gót Mũi Nhọn",
+"cat": "giay-da",
+"gender": "nu",
+"price": 1090000,
+"old": 1290000,
+"colors": [
+"Be nude",
+"Đen",
+"Đỏ"
+],
+"img": "p46.webp",
+"desc": "Giày da Cao Gót Mũi Nhọn – da bò nappa mềm, đế da khâu blake. Thiết kế tối giản, dễ phối với quần jeans, kaki hay váy. Đường may chắc chắn, bảo hành keo chỉ 6 tháng.",
+"specs": {
+"Chất liệu": "Da bò nappa mềm",
+"Đế": "Đế da khâu Blake",
+"Công nghệ": "Lót da cừu hút ẩm",
+"Phù hợp cho": "Đi làm hằng ngày"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+35,
+36,
+37,
+38,
+39,
+40
+],
+"rank": 2
+},
+{
+"id": 47,
+"slug": "nhip-bup-be-da-mem",
+"name": "NHỊP Búp Bê Da Mềm",
+"cat": "giay-da",
+"gender": "nu",
+"price": 690000,
+"old": null,
+"colors": [
+"Đen",
+"Be",
+"Xanh navy"
+],
+"img": "p47.webp",
+"desc": "Giày da Búp Bê Da Mềm – da lộn cao cấp, đế tpr êm. Trọng lượng nhẹ, phù hợp khí hậu nóng ẩm. Đổi size miễn phí trong 30 ngày nếu chưa vừa.",
+"specs": {
+"Chất liệu": "Da lộn cao cấp",
+"Đế": "Đế TPR êm",
+"Công nghệ": "Đệm gót memory foam",
+"Phù hợp cho": "Công sở, sự kiện, tiệc cưới"
+},
+"featured": false,
+"isNew": true,
+"sizes": [
+35,
+36,
+37,
+38,
+39,
+40
+],
+"rank": 39
+},
+{
+"id": 48,
+"slug": "nhip-oxford-nu-co-dien",
+"name": "NHỊP Oxford Nữ Cổ Điển",
+"cat": "giay-da",
+"gender": "nu",
+"price": 1290000,
+"old": null,
+"colors": [
+"Nâu bò",
+"Đen"
+],
+"img": "p48.webp",
+"desc": "Giày da Oxford Nữ Cổ Điển – da bò thật nguyên tấm, đế cao su chống trơn. Đường may chắc chắn, bảo hành keo chỉ 6 tháng. Phom rộng vừa cho bàn chân người Việt, đi cả ngày không bí.",
+"specs": {
+"Chất liệu": "Da bò thật nguyên tấm",
+"Đế": "Đế cao su chống trơn",
+"Công nghệ": "Lót da cừu hút ẩm",
+"Phù hợp cho": "Đi làm hằng ngày"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+35,
+36,
+37,
+38,
+39,
+40
+],
+"rank": 76
+},
+{
+"id": 49,
+"slug": "nhip-sandal-quai-cheo",
+"name": "NHỊP Sandal Quai Chéo",
+"cat": "sandal",
+"gender": "nu",
+"price": 450000,
+"old": 560000,
+"colors": [
+"Be",
+"Đen",
+"Nâu"
+],
+"img": "p49.webp",
+"desc": "Sandal Sandal Quai Chéo – quai dù chịu nước, đế eva siêu nhẹ. Đổi size miễn phí trong 30 ngày nếu chưa vừa. Thiết kế tối giản, dễ phối với quần jeans, kaki hay váy.",
+"specs": {
+"Chất liệu": "Quai dù chịu nước",
+"Đế": "Đế EVA siêu nhẹ",
+"Công nghệ": "Footbed định hình",
+"Phù hợp cho": "Đi biển, dạo phố mùa hè"
+},
+"featured": true,
+"isNew": false,
+"sizes": [
+35,
+36,
+37,
+38,
+39,
+40
+],
+"rank": 13
+},
+{
+"id": 50,
+"slug": "nhip-sandal-hoi-an",
+"name": "NHỊP Sandal Hội An",
+"cat": "sandal",
+"gender": "nu",
+"price": 590000,
+"old": 690000,
+"colors": [
+"Nâu bò",
+"Đen"
+],
+"img": "p50.webp",
+"desc": "Sandal Sandal Hội An – quai da bò, đế cao su chống trượt. Phom rộng vừa cho bàn chân người Việt, đi cả ngày không bí. Trọng lượng nhẹ, phù hợp khí hậu nóng ẩm.",
+"specs": {
+"Chất liệu": "Quai da bò",
+"Đế": "Đế cao su chống trượt",
+"Công nghệ": "Khoá dán chỉnh nhanh",
+"Phù hợp cho": "Du lịch, đi phượt"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+35,
+36,
+37,
+38,
+39,
+40
+],
+"rank": 50
+},
+{
+"id": 51,
+"slug": "nhip-sandal-de-xuong",
+"name": "NHỊP Sandal Đế Xuồng",
+"cat": "sandal",
+"gender": "nu",
+"price": 690000,
+"old": null,
+"colors": [
+"Đen",
+"Kem"
+],
+"img": "p51.webp",
+"desc": "Sandal Sandal Đế Xuồng – quai da tổng hợp, đế bần ôm vòm chân. Thiết kế tối giản, dễ phối với quần jeans, kaki hay váy. Đường may chắc chắn, bảo hành keo chỉ 6 tháng.",
+"specs": {
+"Chất liệu": "Quai da tổng hợp",
+"Đế": "Đế bần ôm vòm chân",
+"Công nghệ": "Footbed định hình",
+"Phù hợp cho": "Đi biển, dạo phố mùa hè"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+35,
+36,
+37,
+38,
+39,
+40
+],
+"rank": 87
+},
+{
+"id": 52,
+"slug": "nhip-sandal-phuot-pro",
+"name": "NHỊP Sandal Phượt Pro",
+"cat": "sandal",
+"gender": "unisex",
+"price": 850000,
+"old": null,
+"colors": [
+"Xanh rêu",
+"Đen",
+"Xám"
+],
+"img": "p52.webp",
+"desc": "Sandal Sandal Phượt Pro – quai dù chịu nước, đế eva siêu nhẹ. Trọng lượng nhẹ, phù hợp khí hậu nóng ẩm. Đổi size miễn phí trong 30 ngày nếu chưa vừa.",
+"specs": {
+"Chất liệu": "Quai dù chịu nước",
+"Đế": "Đế EVA siêu nhẹ",
+"Công nghệ": "Khoá dán chỉnh nhanh",
+"Phù hợp cho": "Du lịch, đi phượt"
+},
+"featured": false,
+"isNew": true,
+"sizes": [
+36,
+37,
+38,
+39,
+40,
+41,
+42,
+43,
+44
+],
+"rank": 24
+},
+{
+"id": 53,
+"slug": "nhip-sandal-hoc-sinh",
+"name": "NHỊP Sandal Học Sinh",
+"cat": "sandal",
+"gender": "unisex",
+"price": 350000,
+"old": null,
+"colors": [
+"Đen",
+"Xanh navy"
+],
+"img": "p53.webp",
+"desc": "Sandal Sandal Học Sinh – quai da bò, đế cao su chống trượt. Đường may chắc chắn, bảo hành keo chỉ 6 tháng. Phom rộng vừa cho bàn chân người Việt, đi cả ngày không bí.",
+"specs": {
+"Chất liệu": "Quai da bò",
+"Đế": "Đế cao su chống trượt",
+"Công nghệ": "Footbed định hình",
+"Phù hợp cho": "Đi biển, dạo phố mùa hè"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+36,
+37,
+38,
+39,
+40,
+41,
+42,
+43,
+44
+],
+"rank": 61
+},
+{
+"id": 54,
+"slug": "nhip-sandal-da-nam",
+"name": "NHỊP Sandal Da Nam",
+"cat": "sandal",
+"gender": "nam",
+"price": 790000,
+"old": null,
+"colors": [
+"Nâu",
+"Đen"
+],
+"img": "p54.webp",
+"desc": "Sandal Sandal Da Nam – quai da tổng hợp, đế bần ôm vòm chân. Đổi size miễn phí trong 30 ngày nếu chưa vừa. Thiết kế tối giản, dễ phối với quần jeans, kaki hay váy.",
+"specs": {
+"Chất liệu": "Quai da tổng hợp",
+"Đế": "Đế bần ôm vòm chân",
+"Công nghệ": "Khoá dán chỉnh nhanh",
+"Phù hợp cho": "Du lịch, đi phượt"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+39,
+40,
+41,
+42,
+43,
+44,
+45
+],
+"rank": 98
+},
+{
+"id": 55,
+"slug": "nhip-sandal-quai-hau-em",
+"name": "NHỊP Sandal Quai Hậu Êm",
+"cat": "sandal",
+"gender": "nu",
+"price": 420000,
+"old": 490000,
+"colors": [
+"Trắng",
+"Hồng",
+"Đen"
+],
+"img": "p55.webp",
+"desc": "Sandal Sandal Quai Hậu Êm – quai dù chịu nước, đế eva siêu nhẹ. Phom rộng vừa cho bàn chân người Việt, đi cả ngày không bí. Trọng lượng nhẹ, phù hợp khí hậu nóng ẩm.",
+"specs": {
+"Chất liệu": "Quai dù chịu nước",
+"Đế": "Đế EVA siêu nhẹ",
+"Công nghệ": "Footbed định hình",
+"Phù hợp cho": "Đi biển, dạo phố mùa hè"
+},
+"featured": true,
+"isNew": false,
+"sizes": [
+35,
+36,
+37,
+38,
+39,
+40
+],
+"rank": 35
+},
+{
+"id": 56,
+"slug": "nhip-sandal-bien-my-khe",
+"name": "NHỊP Sandal Biển Mỹ Khê",
+"cat": "sandal",
+"gender": "unisex",
+"price": 390000,
+"old": null,
+"colors": [
+"Xanh biển",
+"Cam"
+],
+"img": "p56.webp",
+"desc": "Sandal Sandal Biển Mỹ Khê – quai da bò, đế cao su chống trượt. Thiết kế tối giản, dễ phối với quần jeans, kaki hay váy. Đường may chắc chắn, bảo hành keo chỉ 6 tháng.",
+"specs": {
+"Chất liệu": "Quai da bò",
+"Đế": "Đế cao su chống trượt",
+"Công nghệ": "Khoá dán chỉnh nhanh",
+"Phù hợp cho": "Du lịch, đi phượt"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+36,
+37,
+38,
+39,
+40,
+41,
+42,
+43,
+44
+],
+"rank": 72
+},
+{
+"id": 57,
+"slug": "nhip-train-gym-core",
+"name": "NHỊP Train Gym Core",
+"cat": "the-thao",
+"gender": "nam",
+"price": 1290000,
+"old": null,
+"colors": [
+"Đen",
+"Xám đỏ"
+],
+"img": "p57.webp",
+"desc": "Giày thể thao Train Gym Core – lưới + da tổng hợp, đế cao su non-marking. Trọng lượng nhẹ, phù hợp khí hậu nóng ẩm. Đổi size miễn phí trong 30 ngày nếu chưa vừa.",
+"specs": {
+"Chất liệu": "Lưới + da tổng hợp",
+"Đế": "Đế cao su non-marking",
+"Công nghệ": "Đệm EVA nén",
+"Phù hợp cho": "Tennis, pickleball, cầu lông"
+},
+"featured": false,
+"isNew": true,
+"sizes": [
+39,
+40,
+41,
+42,
+43,
+44,
+45
+],
+"rank": 9
+},
+{
+"id": 58,
+"slug": "nhip-train-flex",
+"name": "NHỊP Train Flex",
+"cat": "the-thao",
+"gender": "nu",
+"price": 1090000,
+"old": 1360000,
+"colors": [
+"Tím lavender",
+"Đen"
+],
+"img": "p58.webp",
+"desc": "Giày thể thao Train Flex – knit dệt liền, đế gai xương cá. Đường may chắc chắn, bảo hành keo chỉ 6 tháng. Phom rộng vừa cho bàn chân người Việt, đi cả ngày không bí.",
+"specs": {
+"Chất liệu": "Knit dệt liền",
+"Đế": "Đế gai xương cá",
+"Công nghệ": "Ổn định cổ chân, đệm khí",
+"Phù hợp cho": "Bóng rổ, tập luyện"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+35,
+36,
+37,
+38,
+39,
+40
+],
+"rank": 46
+},
+{
+"id": 59,
+"slug": "nhip-cau-long-pro",
+"name": "NHỊP Cầu Lông Pro",
+"cat": "the-thao",
+"gender": "unisex",
+"price": 990000,
+"old": 1190000,
+"colors": [
+"Trắng xanh",
+"Trắng đỏ"
+],
+"img": "p59.webp",
+"desc": "Giày thể thao Cầu Lông Pro – da pu chống rách, đế cao su bám sân. Đổi size miễn phí trong 30 ngày nếu chưa vừa. Thiết kế tối giản, dễ phối với quần jeans, kaki hay váy.",
+"specs": {
+"Chất liệu": "Da PU chống rách",
+"Đế": "Đế cao su bám sân",
+"Công nghệ": "Đệm EVA nén",
+"Phù hợp cho": "Tập gym, đi bộ"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+36,
+37,
+38,
+39,
+40,
+41,
+42,
+43,
+44
+],
+"rank": 83
+},
+{
+"id": 60,
+"slug": "nhip-futsal-san-nho",
+"name": "NHỊP Futsal Sân Nhỏ",
+"cat": "the-thao",
+"gender": "nam",
+"price": 690000,
+"old": null,
+"colors": [
+"Xanh dương",
+"Đen cam"
+],
+"img": "p60.webp",
+"desc": "Giày thể thao Futsal Sân Nhỏ – lưới + da tổng hợp, đế cao su non-marking. Phom rộng vừa cho bàn chân người Việt, đi cả ngày không bí. Trọng lượng nhẹ, phù hợp khí hậu nóng ẩm.",
+"specs": {
+"Chất liệu": "Lưới + da tổng hợp",
+"Đế": "Đế cao su non-marking",
+"Công nghệ": "Ổn định cổ chân, đệm khí",
+"Phù hợp cho": "Tennis, pickleball, cầu lông"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+39,
+40,
+41,
+42,
+43,
+44,
+45
+],
+"rank": 20
+},
+{
+"id": 61,
+"slug": "nhip-da-bong-co-nhan-tao",
+"name": "NHỊP Đá Bóng Cỏ Nhân Tạo",
+"cat": "the-thao",
+"gender": "nam",
+"price": 890000,
+"old": null,
+"colors": [
+"Đỏ đen",
+"Trắng",
+"Vàng neon"
+],
+"img": "p61.webp",
+"desc": "Giày thể thao Đá Bóng Cỏ Nhân Tạo – knit dệt liền, đế gai xương cá. Thiết kế tối giản, dễ phối với quần jeans, kaki hay váy. Đường may chắc chắn, bảo hành keo chỉ 6 tháng.",
+"specs": {
+"Chất liệu": "Knit dệt liền",
+"Đế": "Đế gai xương cá",
+"Công nghệ": "Đệm EVA nén",
+"Phù hợp cho": "Bóng rổ, tập luyện"
+},
+"featured": true,
+"isNew": false,
+"sizes": [
+39,
+40,
+41,
+42,
+43,
+44,
+45
+],
+"rank": 57
+},
+{
+"id": 62,
+"slug": "nhip-tennis-court",
+"name": "NHỊP Tennis Court",
+"cat": "the-thao",
+"gender": "unisex",
+"price": 1390000,
+"old": null,
+"colors": [
+"Trắng",
+"Trắng xanh lá"
+],
+"img": "p62.webp",
+"desc": "Giày thể thao Tennis Court – da pu chống rách, đế cao su bám sân. Trọng lượng nhẹ, phù hợp khí hậu nóng ẩm. Đổi size miễn phí trong 30 ngày nếu chưa vừa.",
+"specs": {
+"Chất liệu": "Da PU chống rách",
+"Đế": "Đế cao su bám sân",
+"Công nghệ": "Ổn định cổ chân, đệm khí",
+"Phù hợp cho": "Tập gym, đi bộ"
+},
+"featured": false,
+"isNew": true,
+"sizes": [
+36,
+37,
+38,
+39,
+40,
+41,
+42,
+43,
+44
+],
+"rank": 94
+},
+{
+"id": 63,
+"slug": "nhip-train-yoga-slip",
+"name": "NHỊP Train Yoga Slip",
+"cat": "the-thao",
+"gender": "nu",
+"price": 590000,
+"old": null,
+"colors": [
+"Hồng phấn",
+"Xám"
+],
+"img": "p63.webp",
+"desc": "Giày thể thao Train Yoga Slip – lưới + da tổng hợp, đế cao su non-marking. Đường may chắc chắn, bảo hành keo chỉ 6 tháng. Phom rộng vừa cho bàn chân người Việt, đi cả ngày không bí.",
+"specs": {
+"Chất liệu": "Lưới + da tổng hợp",
+"Đế": "Đế cao su non-marking",
+"Công nghệ": "Đệm EVA nén",
+"Phù hợp cho": "Tennis, pickleball, cầu lông"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+35,
+36,
+37,
+38,
+39,
+40
+],
+"rank": 31
+},
+{
+"id": 64,
+"slug": "nhip-bong-ro-sky",
+"name": "NHỊP Bóng Rổ Sky",
+"cat": "the-thao",
+"gender": "nam",
+"price": 1590000,
+"old": 1890000,
+"colors": [
+"Đen vàng",
+"Trắng tím"
+],
+"img": "p64.webp",
+"desc": "Giày thể thao Bóng Rổ Sky – knit dệt liền, đế gai xương cá. Đổi size miễn phí trong 30 ngày nếu chưa vừa. Thiết kế tối giản, dễ phối với quần jeans, kaki hay váy.",
+"specs": {
+"Chất liệu": "Knit dệt liền",
+"Đế": "Đế gai xương cá",
+"Công nghệ": "Ổn định cổ chân, đệm khí",
+"Phù hợp cho": "Bóng rổ, tập luyện"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+39,
+40,
+41,
+42,
+43,
+44,
+45
+],
+"rank": 68
+},
+{
+"id": 65,
+"slug": "nhip-pickleball-dink",
+"name": "NHỊP Pickleball Dink",
+"cat": "the-thao",
+"gender": "unisex",
+"price": 1190000,
+"old": null,
+"colors": [
+"Trắng cam",
+"Xanh navy"
+],
+"img": "p65.webp",
+"desc": "Giày thể thao Pickleball Dink – da pu chống rách, đế cao su bám sân. Phom rộng vừa cho bàn chân người Việt, đi cả ngày không bí. Trọng lượng nhẹ, phù hợp khí hậu nóng ẩm.",
+"specs": {
+"Chất liệu": "Da PU chống rách",
+"Đế": "Đế cao su bám sân",
+"Công nghệ": "Đệm EVA nén",
+"Phù hợp cho": "Tập gym, đi bộ"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+36,
+37,
+38,
+39,
+40,
+41,
+42,
+43,
+44
+],
+"rank": 5
+},
+{
+"id": 66,
+"slug": "nhip-walk-di-bo",
+"name": "NHỊP Walk Đi Bộ",
+"cat": "the-thao",
+"gender": "nu",
+"price": 790000,
+"old": null,
+"colors": [
+"Xám",
+"Be",
+"Đen"
+],
+"img": "p66.webp",
+"desc": "Giày thể thao Walk Đi Bộ – lưới + da tổng hợp, đế cao su non-marking. Thiết kế tối giản, dễ phối với quần jeans, kaki hay váy. Đường may chắc chắn, bảo hành keo chỉ 6 tháng.",
+"specs": {
+"Chất liệu": "Lưới + da tổng hợp",
+"Đế": "Đế cao su non-marking",
+"Công nghệ": "Ổn định cổ chân, đệm khí",
+"Phù hợp cho": "Tennis, pickleball, cầu lông"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+35,
+36,
+37,
+38,
+39,
+40
+],
+"rank": 42
+},
+{
+"id": 67,
+"slug": "nhip-chelsea-boot-da-bo",
+"name": "NHỊP Chelsea Boot Da Bò",
+"cat": "boot",
+"gender": "nam",
+"price": 2190000,
+"old": 2740000,
+"colors": [
+"Nâu",
+"Đen"
+],
+"img": "p67.webp",
+"desc": "Boot Chelsea Boot Da Bò – da lộn, đế crepe. Trọng lượng nhẹ, phù hợp khí hậu nóng ẩm. Đổi size miễn phí trong 30 ngày nếu chưa vừa.",
+"specs": {
+"Chất liệu": "Da lộn",
+"Đế": "Đế crepe",
+"Công nghệ": "Thun hai bên dễ xỏ",
+"Phù hợp cho": "Mùa mưa, du lịch Đà Lạt, Sa Pa"
+},
+"featured": true,
+"isNew": true,
+"sizes": [
+39,
+40,
+41,
+42,
+43,
+44,
+45
+],
+"rank": 79
+},
+{
+"id": 68,
+"slug": "nhip-chelsea-boot-nu",
+"name": "NHỊP Chelsea Boot Nữ",
+"cat": "boot",
+"gender": "nu",
+"price": 1490000,
+"old": 1690000,
+"colors": [
+"Đen",
+"Kem"
+],
+"img": "p68.webp",
+"desc": "Boot Chelsea Boot Nữ – cao su tự nhiên, đế cao su chống trơn. Đường may chắc chắn, bảo hành keo chỉ 6 tháng. Phom rộng vừa cho bàn chân người Việt, đi cả ngày không bí.",
+"specs": {
+"Chất liệu": "Cao su tự nhiên",
+"Đế": "Đế cao su chống trơn",
+"Công nghệ": "Khoá kéo cạnh",
+"Phù hợp cho": "Phối đồ thu đông"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+35,
+36,
+37,
+38,
+39,
+40
+],
+"rank": 16
+},
+{
+"id": 69,
+"slug": "nhip-boot-co-lung-suede",
+"name": "NHỊP Boot Cổ Lửng Suede",
+"cat": "boot",
+"gender": "nam",
+"price": 1890000,
+"old": null,
+"colors": [
+"Nâu cát",
+"Xám"
+],
+"img": "p69.webp",
+"desc": "Boot Boot Cổ Lửng Suede – da bò thật, đế lug răng cưa. Đổi size miễn phí trong 30 ngày nếu chưa vừa. Thiết kế tối giản, dễ phối với quần jeans, kaki hay váy.",
+"specs": {
+"Chất liệu": "Da bò thật",
+"Đế": "Đế lug răng cưa",
+"Công nghệ": "Chống nước nhẹ, lót ấm",
+"Phù hợp cho": "Mùa mưa, du lịch Đà Lạt, Sa Pa"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+39,
+40,
+41,
+42,
+43,
+44,
+45
+],
+"rank": 53
+},
+{
+"id": 70,
+"slug": "nhip-work-boot-sapa",
+"name": "NHỊP Work Boot Sapa",
+"cat": "boot",
+"gender": "nam",
+"price": 2290000,
+"old": null,
+"colors": [
+"Nâu vàng",
+"Đen"
+],
+"img": "p70.webp",
+"desc": "Boot Work Boot Sapa – da lộn, đế crepe. Phom rộng vừa cho bàn chân người Việt, đi cả ngày không bí. Trọng lượng nhẹ, phù hợp khí hậu nóng ẩm.",
+"specs": {
+"Chất liệu": "Da lộn",
+"Đế": "Đế crepe",
+"Công nghệ": "Thun hai bên dễ xỏ",
+"Phù hợp cho": "Phối đồ thu đông"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+39,
+40,
+41,
+42,
+43,
+44,
+45
+],
+"rank": 90
+},
+{
+"id": 71,
+"slug": "nhip-boot-cao-co-nu",
+"name": "NHỊP Boot Cao Cổ Nữ",
+"cat": "boot",
+"gender": "nu",
+"price": 1990000,
+"old": null,
+"colors": [
+"Đen",
+"Nâu"
+],
+"img": "p71.webp",
+"desc": "Boot Boot Cao Cổ Nữ – cao su tự nhiên, đế cao su chống trơn. Thiết kế tối giản, dễ phối với quần jeans, kaki hay váy. Đường may chắc chắn, bảo hành keo chỉ 6 tháng.",
+"specs": {
+"Chất liệu": "Cao su tự nhiên",
+"Đế": "Đế cao su chống trơn",
+"Công nghệ": "Khoá kéo cạnh",
+"Phù hợp cho": "Mùa mưa, du lịch Đà Lạt, Sa Pa"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+35,
+36,
+37,
+38,
+39,
+40
+],
+"rank": 27
+},
+{
+"id": 72,
+"slug": "nhip-combat-boot",
+"name": "NHỊP Combat Boot",
+"cat": "boot",
+"gender": "unisex",
+"price": 1690000,
+"old": null,
+"colors": [
+"Đen",
+"Trắng"
+],
+"img": "p72.webp",
+"desc": "Boot Combat Boot – da bò thật, đế lug răng cưa. Trọng lượng nhẹ, phù hợp khí hậu nóng ẩm. Đổi size miễn phí trong 30 ngày nếu chưa vừa.",
+"specs": {
+"Chất liệu": "Da bò thật",
+"Đế": "Đế lug răng cưa",
+"Công nghệ": "Chống nước nhẹ, lót ấm",
+"Phù hợp cho": "Phối đồ thu đông"
+},
+"featured": false,
+"isNew": true,
+"sizes": [
+36,
+37,
+38,
+39,
+40,
+41,
+42,
+43,
+44
+],
+"rank": 64
+},
+{
+"id": 73,
+"slug": "nhip-boot-leo-nui",
+"name": "NHỊP Boot Leo Núi",
+"cat": "boot",
+"gender": "unisex",
+"price": 1990000,
+"old": 2390000,
+"colors": [
+"Xám cam",
+"Nâu xanh"
+],
+"img": "p73.webp",
+"desc": "Boot Boot Leo Núi – da lộn, đế crepe. Đường may chắc chắn, bảo hành keo chỉ 6 tháng. Phom rộng vừa cho bàn chân người Việt, đi cả ngày không bí.",
+"specs": {
+"Chất liệu": "Da lộn",
+"Đế": "Đế crepe",
+"Công nghệ": "Thun hai bên dễ xỏ",
+"Phù hợp cho": "Mùa mưa, du lịch Đà Lạt, Sa Pa"
+},
+"featured": true,
+"isNew": false,
+"sizes": [
+36,
+37,
+38,
+39,
+40,
+41,
+42,
+43,
+44
+],
+"rank": 1
+},
+{
+"id": 74,
+"slug": "nhip-boot-co-ngan-got-vuong",
+"name": "NHỊP Boot Cổ Ngắn Gót Vuông",
+"cat": "boot",
+"gender": "nu",
+"price": 1290000,
+"old": null,
+"colors": [
+"Nâu bò",
+"Đen",
+"Be"
+],
+"img": "p74.webp",
+"desc": "Boot Boot Cổ Ngắn Gót Vuông – cao su tự nhiên, đế cao su chống trơn. Đổi size miễn phí trong 30 ngày nếu chưa vừa. Thiết kế tối giản, dễ phối với quần jeans, kaki hay váy.",
+"specs": {
+"Chất liệu": "Cao su tự nhiên",
+"Đế": "Đế cao su chống trơn",
+"Công nghệ": "Khoá kéo cạnh",
+"Phù hợp cho": "Phối đồ thu đông"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+35,
+36,
+37,
+38,
+39,
+40
+],
+"rank": 38
+},
+{
+"id": 75,
+"slug": "nhip-boot-mua-cao-su",
+"name": "NHỊP Boot Mưa Cao Su",
+"cat": "boot",
+"gender": "unisex",
+"price": 590000,
+"old": null,
+"colors": [
+"Vàng",
+"Đen",
+"Xanh rêu"
+],
+"img": "p75.webp",
+"desc": "Boot Boot Mưa Cao Su – da bò thật, đế lug răng cưa. Phom rộng vừa cho bàn chân người Việt, đi cả ngày không bí. Trọng lượng nhẹ, phù hợp khí hậu nóng ẩm.",
+"specs": {
+"Chất liệu": "Da bò thật",
+"Đế": "Đế lug răng cưa",
+"Công nghệ": "Chống nước nhẹ, lót ấm",
+"Phù hợp cho": "Mùa mưa, du lịch Đà Lạt, Sa Pa"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+36,
+37,
+38,
+39,
+40,
+41,
+42,
+43,
+44
+],
+"rank": 75
+},
+{
+"id": 76,
+"slug": "nhip-boot-da-lon-nu",
+"name": "NHỊP Boot Da Lộn Nữ",
+"cat": "boot",
+"gender": "nu",
+"price": 1590000,
+"old": 1990000,
+"colors": [
+"Xám khói",
+"Nâu"
+],
+"img": "p76.webp",
+"desc": "Boot Boot Da Lộn Nữ – da lộn, đế crepe. Thiết kế tối giản, dễ phối với quần jeans, kaki hay váy. Đường may chắc chắn, bảo hành keo chỉ 6 tháng.",
+"specs": {
+"Chất liệu": "Da lộn",
+"Đế": "Đế crepe",
+"Công nghệ": "Thun hai bên dễ xỏ",
+"Phù hợp cho": "Phối đồ thu đông"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+35,
+36,
+37,
+38,
+39,
+40
+],
+"rank": 12
+},
+{
+"id": 77,
+"slug": "nhip-dep-quai-ngang",
+"name": "NHỊP Dép Quai Ngang",
+"cat": "dep",
+"gender": "unisex",
+"price": 290000,
+"old": null,
+"colors": [
+"Đen",
+"Trắng",
+"Xám"
+],
+"img": "p77.webp",
+"desc": "Dép Dép Quai Ngang – lông nhân tạo mềm, đế bần. Trọng lượng nhẹ, phù hợp khí hậu nóng ẩm. Đổi size miễn phí trong 30 ngày nếu chưa vừa.",
+"specs": {
+"Chất liệu": "Lông nhân tạo mềm",
+"Đế": "Đế bần",
+"Công nghệ": "Gân massage lòng bàn chân",
+"Phù hợp cho": "Đi trong nhà, đi biển"
+},
+"featured": false,
+"isNew": true,
+"sizes": [
+36,
+37,
+38,
+39,
+40,
+41,
+42,
+43,
+44
+],
+"rank": 49
+},
+{
+"id": 78,
+"slug": "nhip-dep-banh-mi-em",
+"name": "NHỊP Dép Bánh Mì Êm",
+"cat": "dep",
+"gender": "unisex",
+"price": 350000,
+"old": 390000,
+"colors": [
+"Kem",
+"Xanh mint",
+"Đen"
+],
+"img": "p78.webp",
+"desc": "Dép Dép Bánh Mì Êm – eva nguyên khối, đế eva dày 4cm. Đường may chắc chắn, bảo hành keo chỉ 6 tháng. Phom rộng vừa cho bàn chân người Việt, đi cả ngày không bí.",
+"specs": {
+"Chất liệu": "EVA nguyên khối",
+"Đế": "Đế EVA dày 4cm",
+"Công nghệ": "Đệm êm như mây",
+"Phù hợp cho": "Phục hồi sau tập luyện"
+},
+"featured": true,
+"isNew": false,
+"sizes": [
+36,
+37,
+38,
+39,
+40,
+41,
+42,
+43,
+44
+],
+"rank": 86
+},
+{
+"id": 79,
+"slug": "nhip-dep-kep-da",
+"name": "NHỊP Dép Kẹp Da",
+"cat": "dep",
+"gender": "nu",
+"price": 390000,
+"old": null,
+"colors": [
+"Nâu",
+"Đen",
+"Be"
+],
+"img": "p79.webp",
+"desc": "Dép Dép Kẹp Da – quai da tổng hợp, đế cao su mỏng. Đổi size miễn phí trong 30 ngày nếu chưa vừa. Thiết kế tối giản, dễ phối với quần jeans, kaki hay váy.",
+"specs": {
+"Chất liệu": "Quai da tổng hợp",
+"Đế": "Đế cao su mỏng",
+"Công nghệ": "Gân massage lòng bàn chân",
+"Phù hợp cho": "Đi trong nhà, đi biển"
+},
+"featured": true,
+"isNew": false,
+"sizes": [
+35,
+36,
+37,
+38,
+39,
+40
+],
+"rank": 23
+},
+{
+"id": 80,
+"slug": "nhip-dep-le-da-hai-quai",
+"name": "NHỊP Dép Lê Da Hai Quai",
+"cat": "dep",
+"gender": "nam",
+"price": 650000,
+"old": null,
+"colors": [
+"Nâu sẫm",
+"Đen"
+],
+"img": "p80.webp",
+"desc": "Dép Dép Lê Da Hai Quai – lông nhân tạo mềm, đế bần. Phom rộng vừa cho bàn chân người Việt, đi cả ngày không bí. Trọng lượng nhẹ, phù hợp khí hậu nóng ẩm.",
+"specs": {
+"Chất liệu": "Lông nhân tạo mềm",
+"Đế": "Đế bần",
+"Công nghệ": "Đệm êm như mây",
+"Phù hợp cho": "Phục hồi sau tập luyện"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+39,
+40,
+41,
+42,
+43,
+44,
+45
+],
+"rank": 60
+},
+{
+"id": 81,
+"slug": "nhip-dep-suc-vuon",
+"name": "NHỊP Dép Sục Vườn",
+"cat": "dep",
+"gender": "unisex",
+"price": 320000,
+"old": null,
+"colors": [
+"Xanh lá",
+"Đen",
+"Hồng"
+],
+"img": "p81.webp",
+"desc": "Dép Dép Sục Vườn – eva nguyên khối, đế eva dày 4cm. Thiết kế tối giản, dễ phối với quần jeans, kaki hay váy. Đường may chắc chắn, bảo hành keo chỉ 6 tháng.",
+"specs": {
+"Chất liệu": "EVA nguyên khối",
+"Đế": "Đế EVA dày 4cm",
+"Công nghệ": "Gân massage lòng bàn chân",
+"Phù hợp cho": "Đi trong nhà, đi biển"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+36,
+37,
+38,
+39,
+40,
+41,
+42,
+43,
+44
+],
+"rank": 97
+},
+{
+"id": 82,
+"slug": "nhip-dep-long-nha",
+"name": "NHỊP Dép Lông Nhà",
+"cat": "dep",
+"gender": "nu",
+"price": 290000,
+"old": null,
+"colors": [
+"Hồng",
+"Xám"
+],
+"img": "p82.webp",
+"desc": "Dép Dép Lông Nhà – quai da tổng hợp, đế cao su mỏng. Trọng lượng nhẹ, phù hợp khí hậu nóng ẩm. Đổi size miễn phí trong 30 ngày nếu chưa vừa.",
+"specs": {
+"Chất liệu": "Quai da tổng hợp",
+"Đế": "Đế cao su mỏng",
+"Công nghệ": "Đệm êm như mây",
+"Phù hợp cho": "Phục hồi sau tập luyện"
+},
+"featured": false,
+"isNew": true,
+"sizes": [
+35,
+36,
+37,
+38,
+39,
+40
+],
+"rank": 34
+},
+{
+"id": 83,
+"slug": "nhip-dep-quai-dan",
+"name": "NHỊP Dép Quai Đan",
+"cat": "dep",
+"gender": "nu",
+"price": 450000,
+"old": 520000,
+"colors": [
+"Trắng",
+"Be"
+],
+"img": "p83.webp",
+"desc": "Dép Dép Quai Đan – lông nhân tạo mềm, đế bần. Đường may chắc chắn, bảo hành keo chỉ 6 tháng. Phom rộng vừa cho bàn chân người Việt, đi cả ngày không bí.",
+"specs": {
+"Chất liệu": "Lông nhân tạo mềm",
+"Đế": "Đế bần",
+"Công nghệ": "Gân massage lòng bàn chân",
+"Phù hợp cho": "Đi trong nhà, đi biển"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+35,
+36,
+37,
+38,
+39,
+40
+],
+"rank": 71
+},
+{
+"id": 84,
+"slug": "nhip-dep-the-thao-recovery",
+"name": "NHỊP Dép Thể Thao Recovery",
+"cat": "dep",
+"gender": "nam",
+"price": 420000,
+"old": null,
+"colors": [
+"Đen",
+"Xanh navy"
+],
+"img": "p84.webp",
+"desc": "Dép Dép Thể Thao Recovery – eva nguyên khối, đế eva dày 4cm. Đổi size miễn phí trong 30 ngày nếu chưa vừa. Thiết kế tối giản, dễ phối với quần jeans, kaki hay váy.",
+"specs": {
+"Chất liệu": "EVA nguyên khối",
+"Đế": "Đế EVA dày 4cm",
+"Công nghệ": "Đệm êm như mây",
+"Phù hợp cho": "Phục hồi sau tập luyện"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+39,
+40,
+41,
+42,
+43,
+44,
+45
+],
+"rank": 8
+},
+{
+"id": 85,
+"slug": "nhip-loafer-penny",
+"name": "NHỊP Loafer Penny",
+"cat": "giay-luoi",
+"gender": "nam",
+"price": 1590000,
+"old": 1990000,
+"colors": [
+"Nâu",
+"Đen"
+],
+"img": "p85.webp",
+"desc": "Giày lười Loafer Penny – da lộn, đế cao su mỏng. Phom rộng vừa cho bàn chân người Việt, đi cả ngày không bí. Trọng lượng nhẹ, phù hợp khí hậu nóng ẩm.",
+"specs": {
+"Chất liệu": "Da lộn",
+"Đế": "Đế cao su mỏng",
+"Công nghệ": "Không dây, xỏ nhanh",
+"Phù hợp cho": "Công sở smart casual"
+},
+"featured": true,
+"isNew": false,
+"sizes": [
+39,
+40,
+41,
+42,
+43,
+44,
+45
+],
+"rank": 45
+},
+{
+"id": 86,
+"slug": "nhip-loafer-horsebit",
+"name": "NHỊP Loafer Horsebit",
+"cat": "giay-luoi",
+"gender": "nam",
+"price": 1790000,
+"old": 1990000,
+"colors": [
+"Đen",
+"Đỏ đô"
+],
+"img": "p86.webp",
+"desc": "Giày lười Loafer Horsebit – vải lanh canvas, đế da. Thiết kế tối giản, dễ phối với quần jeans, kaki hay váy. Đường may chắc chắn, bảo hành keo chỉ 6 tháng.",
+"specs": {
+"Chất liệu": "Vải lanh canvas",
+"Đế": "Đế da",
+"Công nghệ": "Lót da hút ẩm",
+"Phù hợp cho": "Dạo phố, du lịch"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+39,
+40,
+41,
+42,
+43,
+44,
+45
+],
+"rank": 82
+},
+{
+"id": 87,
+"slug": "nhip-luoi-vai-lanh",
+"name": "NHỊP Lười Vải Lanh",
+"cat": "giay-luoi",
+"gender": "nam",
+"price": 690000,
+"old": null,
+"colors": [
+"Xanh navy",
+"Be"
+],
+"img": "p87.webp",
+"desc": "Giày lười Lười Vải Lanh – da bò thật, đế cao su hạt. Trọng lượng nhẹ, phù hợp khí hậu nóng ẩm. Đổi size miễn phí trong 30 ngày nếu chưa vừa.",
+"specs": {
+"Chất liệu": "Da bò thật",
+"Đế": "Đế cao su hạt",
+"Công nghệ": "Không dây, xỏ nhanh",
+"Phù hợp cho": "Công sở smart casual"
+},
+"featured": false,
+"isNew": true,
+"sizes": [
+39,
+40,
+41,
+42,
+43,
+44,
+45
+],
+"rank": 19
+},
+{
+"id": 88,
+"slug": "nhip-luoi-da-lon-lai-xe",
+"name": "NHỊP Lười Da Lộn Lái Xe",
+"cat": "giay-luoi",
+"gender": "nam",
+"price": 990000,
+"old": null,
+"colors": [
+"Nâu cát",
+"Xanh navy",
+"Xám"
+],
+"img": "p88.webp",
+"desc": "Giày lười Lười Da Lộn Lái Xe – da lộn, đế cao su mỏng. Đường may chắc chắn, bảo hành keo chỉ 6 tháng. Phom rộng vừa cho bàn chân người Việt, đi cả ngày không bí.",
+"specs": {
+"Chất liệu": "Da lộn",
+"Đế": "Đế cao su mỏng",
+"Công nghệ": "Lót da hút ẩm",
+"Phù hợp cho": "Dạo phố, du lịch"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+39,
+40,
+41,
+42,
+43,
+44,
+45
+],
+"rank": 56
+},
+{
+"id": 89,
+"slug": "nhip-loafer-nu-chunky",
+"name": "NHỊP Loafer Nữ Chunky",
+"cat": "giay-luoi",
+"gender": "nu",
+"price": 1190000,
+"old": null,
+"colors": [
+"Đen",
+"Kem"
+],
+"img": "p89.webp",
+"desc": "Giày lười Loafer Nữ Chunky – vải lanh canvas, đế da. Đổi size miễn phí trong 30 ngày nếu chưa vừa. Thiết kế tối giản, dễ phối với quần jeans, kaki hay váy.",
+"specs": {
+"Chất liệu": "Vải lanh canvas",
+"Đế": "Đế da",
+"Công nghệ": "Không dây, xỏ nhanh",
+"Phù hợp cho": "Công sở smart casual"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+35,
+36,
+37,
+38,
+39,
+40
+],
+"rank": 93
+},
+{
+"id": 90,
+"slug": "nhip-luoi-nu-mui-vuong",
+"name": "NHỊP Lười Nữ Mũi Vuông",
+"cat": "giay-luoi",
+"gender": "nu",
+"price": 890000,
+"old": 1050000,
+"colors": [
+"Be",
+"Đen",
+"Nâu"
+],
+"img": "p90.webp",
+"desc": "Giày lười Lười Nữ Mũi Vuông – da bò thật, đế cao su hạt. Phom rộng vừa cho bàn chân người Việt, đi cả ngày không bí. Trọng lượng nhẹ, phù hợp khí hậu nóng ẩm.",
+"specs": {
+"Chất liệu": "Da bò thật",
+"Đế": "Đế cao su hạt",
+"Công nghệ": "Lót da hút ẩm",
+"Phù hợp cho": "Dạo phố, du lịch"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+35,
+36,
+37,
+38,
+39,
+40
+],
+"rank": 30
+},
+{
+"id": 91,
+"slug": "nhip-mule-da-nu",
+"name": "NHỊP Mule Da Nữ",
+"cat": "giay-luoi",
+"gender": "nu",
+"price": 790000,
+"old": null,
+"colors": [
+"Nâu bò",
+"Đen"
+],
+"img": "p91.webp",
+"desc": "Giày lười Mule Da Nữ – da lộn, đế cao su mỏng. Thiết kế tối giản, dễ phối với quần jeans, kaki hay váy. Đường may chắc chắn, bảo hành keo chỉ 6 tháng.",
+"specs": {
+"Chất liệu": "Da lộn",
+"Đế": "Đế cao su mỏng",
+"Công nghệ": "Không dây, xỏ nhanh",
+"Phù hợp cho": "Công sở smart casual"
+},
+"featured": true,
+"isNew": false,
+"sizes": [
+35,
+36,
+37,
+38,
+39,
+40
+],
+"rank": 67
+},
+{
+"id": 92,
+"slug": "nhip-luoi-slip-on-nam",
+"name": "NHỊP Lười Slip-on Nam",
+"cat": "giay-luoi",
+"gender": "nam",
+"price": 1290000,
+"old": null,
+"colors": [
+"Đen",
+"Nâu sẫm"
+],
+"img": "p92.webp",
+"desc": "Giày lười Lười Slip-on Nam – vải lanh canvas, đế da. Trọng lượng nhẹ, phù hợp khí hậu nóng ẩm. Đổi size miễn phí trong 30 ngày nếu chưa vừa.",
+"specs": {
+"Chất liệu": "Vải lanh canvas",
+"Đế": "Đế da",
+"Công nghệ": "Lót da hút ẩm",
+"Phù hợp cho": "Dạo phố, du lịch"
+},
+"featured": false,
+"isNew": true,
+"sizes": [
+39,
+40,
+41,
+42,
+43,
+44,
+45
+],
+"rank": 4
+},
+{
+"id": 93,
+"slug": "nhip-kid-sneaker-sao",
+"name": "NHỊP Kid Sneaker Sao",
+"cat": "tre-em",
+"gender": "unisex",
+"price": 390000,
+"old": null,
+"colors": [
+"Trắng hồng",
+"Trắng xanh"
+],
+"img": "p93.webp",
+"desc": "Giày trẻ em Kid Sneaker Sao – da tổng hợp mềm, đế cao su chống trượt. Đường may chắc chắn, bảo hành keo chỉ 6 tháng. Phom rộng vừa cho bàn chân người Việt, đi cả ngày không bí.",
+"specs": {
+"Chất liệu": "Da tổng hợp mềm",
+"Đế": "Đế cao su chống trượt",
+"Công nghệ": "Mũi giày bảo vệ ngón",
+"Phù hợp cho": "Đi học, vui chơi"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+26,
+27,
+28,
+29,
+30,
+31,
+32,
+33,
+34
+],
+"rank": 41
+},
+{
+"id": 94,
+"slug": "nhip-kid-run-tia-chop",
+"name": "NHỊP Kid Run Tia Chớp",
+"cat": "tre-em",
+"gender": "unisex",
+"price": 450000,
+"old": 520000,
+"colors": [
+"Xanh dương",
+"Đỏ"
+],
+"img": "p94.webp",
+"desc": "Giày trẻ em Kid Run Tia Chớp – vải canvas, đế eva siêu nhẹ. Đổi size miễn phí trong 30 ngày nếu chưa vừa. Thiết kế tối giản, dễ phối với quần jeans, kaki hay váy.",
+"specs": {
+"Chất liệu": "Vải canvas",
+"Đế": "Đế EVA siêu nhẹ",
+"Công nghệ": "Quai dán tự mang",
+"Phù hợp cho": "Bé 3–10 tuổi"
+},
+"featured": false,
+"isNew": false,
+"sizes": [
+26,
+27,
+28,
+29,
+30,
+31,
+32,
+33,
+34
+],
+"rank": 78
+},
+{
+"id": 95,
+"slug": "nhip-kid-sandal-bien",
+"name": "NHỊP Kid Sandal Biển",
+"cat": "tre-em",
+"gender": "unisex",
+"price": 290000,
+"old": null,
+"colors": [
+"Vàng",
+"Xanh lá"
+],
+"img": "p95.webp",
+"desc": "Giày trẻ em Kid Sandal Biển – cao su tự nhiên an toàn, đế cao su chống trượt. Phom rộng vừa cho bàn chân người Việt, đi cả ngày không bí. Trọng lượng nhẹ, phù hợp khí hậu nóng ẩm.",
+"specs": {
+"Chất liệu": "Cao su tự nhiên an toàn",
+"Đế": "Đế cao su chống trượt",
+"Công nghệ": "Mũi giày bảo vệ ngón",
+"Phù hợp cho": "Đi học, vui chơi"
+},
+"featured": false,
+"isNew": true,
+"sizes": [
+26,
+27,
+28,
+29,
+30,
+31,
+32,
+33,
+34
+],
+"rank": 15
+},
+{
+"id": 96,
+"slug": "nhip-kid-di-hoc",
+"name": "NHỊP Kid Đi Học",
+"cat": "tre-em",
+"gender": "unisex",
+"price": 350000,
+"old": null,
+"colors": [
+"Đen",
+"Trắng"
+],
+"img": "p96.webp",
+"desc": "Giày trẻ em Kid Đi Học – da tổng hợp mềm, đế eva siêu nhẹ. Thiết kế tối giản, dễ phối với quần jeans, kaki hay váy. Đường may chắc chắn, bảo hành keo chỉ 6 tháng.",
+"specs": {
+"Chất liệu": "Da tổng hợp mềm",
+"Đế": "Đế EVA siêu nhẹ",
+"Công nghệ": "Quai dán tự mang",
+"Phù hợp cho": "Bé 3–10 tuổi"
+},
+"featured": false,
+"isNew": true,
+"sizes": [
+26,
+27,
+28,
+29,
+30,
+31,
+32,
+33,
+34
+],
+"rank": 52
+},
+{
+"id": 97,
+"slug": "nhip-kid-ung-mua-ech",
+"name": "NHỊP Kid Ủng Mưa Ếch",
+"cat": "tre-em",
+"gender": "unisex",
+"price": 290000,
+"old": null,
+"colors": [
+"Xanh lá",
+"Vàng"
+],
+"img": "p97.webp",
+"desc": "Giày trẻ em Kid Ủng Mưa Ếch – vải canvas, đế cao su chống trượt. Trọng lượng nhẹ, phù hợp khí hậu nóng ẩm. Đổi size miễn phí trong 30 ngày nếu chưa vừa.",
+"specs": {
+"Chất liệu": "Vải canvas",
+"Đế": "Đế cao su chống trượt",
+"Công nghệ": "Mũi giày bảo vệ ngón",
+"Phù hợp cho": "Đi học, vui chơi"
+},
+"featured": true,
+"isNew": true,
+"sizes": [
+26,
+27,
+28,
+29,
+30,
+31,
+32,
+33,
+34
+],
+"rank": 89
+},
+{
+"id": 98,
+"slug": "nhip-kid-bup-be",
+"name": "NHỊP Kid Búp Bê",
+"cat": "tre-em",
+"gender": "nu",
+"price": 320000,
+"old": null,
+"colors": [
+"Hồng",
+"Đỏ",
+"Bạc"
+],
+"img": "p98.webp",
+"desc": "Giày trẻ em Kid Búp Bê – cao su tự nhiên an toàn, đế eva siêu nhẹ. Đường may chắc chắn, bảo hành keo chỉ 6 tháng. Phom rộng vừa cho bàn chân người Việt, đi cả ngày không bí.",
+"specs": {
+"Chất liệu": "Cao su tự nhiên an toàn",
+"Đế": "Đế EVA siêu nhẹ",
+"Công nghệ": "Quai dán tự mang",
+"Phù hợp cho": "Bé 3–10 tuổi"
+},
+"featured": false,
+"isNew": true,
+"sizes": [
+26,
+27,
+28,
+29,
+30,
+31,
+32,
+33,
+34
+],
+"rank": 26
+},
+{
+"id": 99,
+"slug": "nhip-kid-canvas-mau",
+"name": "NHỊP Kid Canvas Màu",
+"cat": "tre-em",
+"gender": "unisex",
+"price": 290000,
+"old": 350000,
+"colors": [
+"Cam",
+"Xanh navy",
+"Hồng"
+],
+"img": "p99.webp",
+"desc": "Giày trẻ em Kid Canvas Màu – da tổng hợp mềm, đế cao su chống trượt. Đổi size miễn phí trong 30 ngày nếu chưa vừa. Thiết kế tối giản, dễ phối với quần jeans, kaki hay váy.",
+"specs": {
+"Chất liệu": "Da tổng hợp mềm",
+"Đế": "Đế cao su chống trượt",
+"Công nghệ": "Mũi giày bảo vệ ngón",
+"Phù hợp cho": "Đi học, vui chơi"
+},
+"featured": false,
+"isNew": true,
+"sizes": [
+26,
+27,
+28,
+29,
+30,
+31,
+32,
+33,
+34
+],
+"rank": 63
+},
+{
+"id": 100,
+"slug": "nhip-kid-boot-mini",
+"name": "NHỊP Kid Boot Mini",
+"cat": "tre-em",
+"gender": "unisex",
+"price": 490000,
+"old": null,
+"colors": [
+"Nâu",
+"Hồng"
+],
+"img": "p100.webp",
+"desc": "Giày trẻ em Kid Boot Mini – vải canvas, đế eva siêu nhẹ. Phom rộng vừa cho bàn chân người Việt, đi cả ngày không bí. Trọng lượng nhẹ, phù hợp khí hậu nóng ẩm.",
+"specs": {
+"Chất liệu": "Vải canvas",
+"Đế": "Đế EVA siêu nhẹ",
+"Công nghệ": "Quai dán tự mang",
+"Phù hợp cho": "Bé 3–10 tuổi"
+},
+"featured": false,
+"isNew": true,
+"sizes": [
+26,
+27,
+28,
+29,
+30,
+31,
+32,
+33,
+34
+],
+"rank": 0
+}
+]

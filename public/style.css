@@ -250,3 +250,23 @@ table.t{width:100%;border-collapse:collapse;font-size:15px}table.t th,table.t td
 .field .msg:not(:empty){animation:pgin .2s ease-out}
 @media(prefers-reduced-motion:reduce){.slide img{transform:none!important}.rvl:not(.in){opacity:1;transform:none}.slide .in>*{opacity:1;transform:none}.done .badge svg{stroke-dashoffset:0}}
 .hero p.eyebrow{font-size:13px;margin:0 0 14px;color:rgba(255,255,255,.88)}
+/* ---- catalog 100 SP ---- */
+.cats.cats9{grid-template-columns:repeat(3,1fr)}
+.cats9 .cat{aspect-ratio:16/10}
+.cat span small{display:block;font-size:12px;font-weight:500;opacity:.75;letter-spacing:0;text-transform:none}
+
+@media(max-width:640px){.cats.cats9{grid-template-columns:repeat(2,1fr)}.cats9 .cat{aspect-ratio:1}.cats9 .cat:first-child{grid-column:span 2;aspect-ratio:2/1}}
+.railnav{display:flex;align-items:center;gap:4px}
+.railnav .rp svg{transform:rotate(180deg)}
+.rail{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 3*16px)/4);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px;overscroll-behavior-x:contain}
+.rail::-webkit-scrollbar{display:none}
+.rail>*{scroll-snap-align:start;min-width:0}
+@media(max-width:1000px){.rail{grid-auto-columns:calc((100% - 2*16px)/3)}}
+@media(max-width:640px){.rail{grid-auto-columns:44%;gap:10px;margin-right:-16px;padding-right:16px}.railnav .icbtn{display:none}}
+.filters.f2{top:auto;position:static;margin-top:-8px}
+.sbx{display:flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:999px;padding:0 12px;min-height:40px;flex:0 0 auto}
+.sbx svg{width:16px;height:16px}.sbx input{border:0;outline:0;background:none;font:inherit;width:150px}
+.more{display:flex;flex-direction:column;align-items:center;gap:8px;padding:32px 0 64px}
+.tag.new{background:var(--ink,#111);color:#fff}
+.specs{display:grid;gap:0;margin:0}.specs>div{display:grid;grid-template-columns:120px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid var(--line)}
+.specs dt{color:var(--muted,#666)}.specs dd{margin:0}
