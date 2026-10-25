@@ -240,7 +240,7 @@ async function checkout(){document.title='Thanh toán – NHỊP';if(!cart.get()
  <div id="er" role="alert"></div><button class="btn block only-m-btn" id="place" style="margin-top:24px">Đặt hàng</button></form>
  <aside class="summary" aria-label="Tóm tắt đơn hàng"><h2>Đơn hàng</h2><div id="sl"></div><div class="coupon"><input id="cc" placeholder="Mã giảm giá" aria-label="Mã giảm giá" autocomplete="off" spellcheck="false"><button type="button" class="btn ghost sm" id="ca">Áp dụng</button></div><div id="cm" aria-live="polite"></div><div class="rows" id="sum"></div>
  <p class="muted xs" style="margin:16px 0 0;display:flex;gap:8px">${ic('shield')}Không thu tiền trong bản demo. Dữ liệu chỉ dùng để thử luồng đặt hàng.</p></aside></div></div>`;
- const fm=$('#fm');for(const k in saved)if(fm[k])fm[k].value=saved[k];
+ const fm=$('#fm');fm.onsubmit=e=>e.preventDefault();for(const k in saved)if(fm[k])fm[k].value=saved[k];
  const check=(n,show=true)=>{const el=fm[n],r=RULES[n](el.value),f=$(`[data-f="${n}"]`);const ok=r===true;if(show){f.classList.toggle('bad',!ok);f.classList.toggle('good',ok&&!!el.value);$('#m-'+n).textContent=ok?'':r;el.setAttribute('aria-invalid',!ok)}return ok};
  Object.keys(RULES).forEach(n=>{const el=fm[n];el.addEventListener('blur',()=>{if(el.value||el.dataset.t)check(n)});el.addEventListener('input',()=>{el.dataset.t=1;if($(`[data-f="${n}"]`).classList.contains('bad'))check(n)})});
  fm.province.onchange=()=>{check('province');refresh()};$$('[name=pay]').forEach(r=>r.onchange=()=>pay=r.value);$('#consent').onchange=()=>$('#m-consent').hidden=true;
