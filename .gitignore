@@ -3,3 +3,4 @@ data/
 *.log
 screenshots/motion/*.webm
 screenshots/motion/*.gif
+tools/raw/
