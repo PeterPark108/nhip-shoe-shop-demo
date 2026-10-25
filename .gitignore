@@ -1,3 +1,5 @@
 node_modules/
 data/
 *.log
+screenshots/motion/*.webm
+screenshots/motion/*.gif

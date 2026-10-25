@@ -10,7 +10,7 @@ let PRODUCTS=null,META=null;
 const api=async(u,o={})=>{const r=await fetch(u,{headers:{'Content-Type':'application/json'},...o,body:o.body&&JSON.stringify(o.body)});const j=await r.json().catch(()=>({}));if(!r.ok)throw new Error(j.error||'Lỗi kết nối, vui lòng thử lại');return j};
 const loadP=async()=>PRODUCTS||(PRODUCTS=await api('/api/products'));
 const cart={get:()=>{try{return JSON.parse(localStorage.cart||'[]')}catch{return[]}},set(c){localStorage.cart=JSON.stringify(c);badge()},
- add(it){const c=cart.get();const e=c.find(x=>x.id===it.id&&x.color===it.color&&x.size===it.size);e?e.qty=Math.min(10,e.qty+it.qty):c.push(it);cart.set(c)}};
+ add(it){bump&&setTimeout(bump,0);const c=cart.get();const e=c.find(x=>x.id===it.id&&x.color===it.color&&x.size===it.size);e?e.qty=Math.min(10,e.qty+it.qty):c.push(it);cart.set(c)}};
 const badge=()=>{const n=cart.get().reduce((a,x)=>a+x.qty,0),b=$('#cartn');b.textContent=n;b.dataset.z=n?'1':'0';$('#cartBtn').setAttribute('aria-label',`Giỏ hàng, ${n} sản phẩm`)};
 const toast=m=>{const t=$('#toast');t.innerHTML=ic('check')+esc(m);t.classList.add('on');clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove('on'),2200)};
 const go=u=>{history.pushState({},'',u);route()};
@@ -76,19 +76,57 @@ const card=p=>{const sz=p.sizes;return `<div class="pc"><div class="mwrap"><a hr
  <span class="swatches" aria-hidden="true">${p.colors.slice(0,5).map(c=>`<i class="sw" style="background:${SW[c]||'#ccc'}"></i>`).join('')}</span></a></div>`};
 function wireCards(root){$$('[data-qa]',root).forEach(b=>b.onclick=e=>{e.preventDefault();const p=PRODUCTS.find(x=>x.id==b.dataset.qa);cart.add({id:p.id,color:p.colors[0],size:+b.dataset.s,qty:1});openCart(true)})}
 
+
+/* ---------- hero carousel ---------- */
+const SLIDES=[
+ {img:'hero1',eb:'Bộ sưu tập Thu 2026 · Chạy bộ',h:'Đi theo<br>nhịp của bạn',p:'Đệm êm cả ngày, thoáng khí cho trời nóng ẩm. Phom rộng vừa cho chân người Việt.',c:[['/san-pham?cat=chay-bo','Giày chạy bộ'],['/san-pham','Xem tất cả']],alt:'Người chạy bộ mang giày NHỊP trên phố Sài Gòn lúc bình minh'},
+ {img:'hero2',eb:'Sneaker nam & nữ',h:'Trắng sạch.<br>Đi cả ngày.',p:'Sneaker da tối giản, phối gì cũng hợp, từ giảng đường đến phố cổ.',c:[['/san-pham?cat=sneaker&gender=nam','Sneaker nam'],['/san-pham?cat=sneaker&gender=nu','Sneaker nữ']],alt:'Đôi bạn trẻ mang sneaker trắng dạo phố cổ Hà Nội'},
+ {img:'hero3',eb:'Ưu đãi đơn đầu',h:'Giảm <span data-count="10">10</span>%<br>với WELCOME10',p:'Nhập mã WELCOME10 ở bước thanh toán, giảm tối đa 200.000đ. Kèm hàng sale đến 18%.',c:[['/san-pham?sort=sale','Săn sale ngay'],['/san-pham','Mua sắm']],alt:'Nhiều đôi giày chạy bộ nhiều màu trên nền cam'},
+ {img:'hero4',eb:'Giày da công sở',h:'Chỉn chu<br>từ bước đầu',p:'Da bò thật, đế cao su chống trơn, đủ êm cho cả ngày họp hành.',c:[['/san-pham?cat=giay-da','Xem giày da'],['/huong-dan-chon-size','Chọn size chuẩn']],alt:'Giày da nâu bước ra từ sảnh văn phòng'},
+ {img:'hero5',eb:'Sandal · Đổi size 30 ngày',h:'Nhẹ chân<br>mùa nắng',p:'Sandal quai dán êm, đi biển hay dạo phố. Chưa vừa? Đổi size miễn phí trong 30 ngày.',c:[['/san-pham?cat=sandal','Xem sandal'],['/chinh-sach/doi-tra','Chính sách đổi trả']],alt:'Đôi chân mang sandal xanh navy trên bãi biển Đà Nẵng'}];
+const heroH=()=>`<section class="hero" id="hero" aria-roledescription="carousel" aria-label="Banner nổi bật" tabindex="-1">
+ <div class="slides">${SLIDES.map((s,i)=>`<div class="slide${i?'':' on'}" role="group" aria-roledescription="slide" aria-label="${i+1} / ${SLIDES.length}" ${i?'aria-hidden="true"':''}>
+  <picture><source media="(max-width:767px)" ${i?'data-':''}srcset="/img/${s.img}-m.webp"><img ${i?'data-':''}src="/img/${s.img}.webp" alt="${esc(s.alt)}" width="1600" height="900" ${i?'':'fetchpriority="high"'}></picture>
+  <div class="in wrap"><p class="eyebrow">${s.eb}</p><${i?'h2':'h1'} class="display">${s.h}</${i?'h2':'h1'}><p class="lead">${s.p}</p><div class="cta">${s.c.map(([u,t],k)=>`<a class="btn ${k?'ghost on-dark':'white'}" href="${u}" data-link ${i?'tabindex="-1"':''}>${t}${k?'':ic('arrow')}</a>`).join('')}</div></div></div>`).join('')}</div>
+ <div class="hctl wrap"><div class="dots" role="tablist" aria-label="Chọn banner">${SLIDES.map((s,i)=>`<button role="tab" class="dot" aria-label="Banner ${i+1}: ${esc(s.eb)}" aria-selected="${!i}"><i></i></button>`).join('')}</div>
+ <div class="harr"><button class="hbtn" id="hpp" aria-label="Tạm dừng banner">${ic('pause')}</button><button class="hbtn only-dk" id="hprev" aria-label="Banner trước">${ic('left')}</button><button class="hbtn only-dk" id="hnext" aria-label="Banner sau">${ic('right')}</button></div></div></section>`;
+const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function initHero(){const H=$('#hero');if(!H)return;const sl=$$('.slide',H),dots=$$('.dot',H),N=sl.length;let cur=0,paused=RM,user=false,hover=false;
+ const load=i=>{const s=sl[(i+N)%N];$$('[data-src],[data-srcset]',s).forEach(e=>{if(e.dataset.srcset){e.srcset=e.dataset.srcset;delete e.dataset.srcset}if(e.dataset.src){e.src=e.dataset.src;delete e.dataset.src}})};
+ const state=()=>{const run=!paused&&!user&&!hover&&!document.hidden;H.classList.toggle('paused',!run);const b=$('#hpp');b.innerHTML=ic(user||RM?'play':'pause');b.setAttribute('aria-label',user||RM?'Chạy banner':'Tạm dừng banner')};
+ const show=i=>{i=(i+N)%N;load(i);load(i+1);sl.forEach((s,k)=>{const on=k===i;s.classList.toggle('on',on);s.toggleAttribute('aria-hidden',!on);$$('a',s).forEach(a=>on?a.removeAttribute('tabindex'):a.setAttribute('tabindex','-1'))});
+  dots.forEach((d,k)=>{d.setAttribute('aria-selected',k===i);d.classList.remove('run');if(k===i){void d.offsetWidth;d.classList.add('run')}});cur=i;H.dataset.cur=i;countUp(sl[i])};
+ dots.forEach((d,k)=>{d.onclick=()=>show(k);$('i',d).addEventListener('animationend',()=>{if(!RM&&k===cur&&!H.classList.contains('paused'))show(cur+1)})});
+ $('#hprev').onclick=()=>show(cur-1);$('#hnext').onclick=()=>show(cur+1);$('#hpp').onclick=()=>{user=!user;if(RM)paused=!paused,user=paused;state()};
+ H.addEventListener('mouseenter',()=>{hover=true;state()});H.addEventListener('mouseleave',()=>{hover=false;state()});
+ H.addEventListener('focusin',()=>{hover=true;state()});H.addEventListener('focusout',e=>{if(!H.contains(e.relatedTarget)){hover=false;state()}});
+ H.addEventListener('keydown',e=>{if(e.key==='ArrowLeft'){show(cur-1);e.preventDefault()}if(e.key==='ArrowRight'){show(cur+1);e.preventDefault()}});
+ let x0=null,y0=0;H.addEventListener('touchstart',e=>{x0=e.touches[0].clientX;y0=e.touches[0].clientY;hover=true;state()},{passive:true});
+ H.addEventListener('touchend',e=>{if(x0!=null){const dx=e.changedTouches[0].clientX-x0,dy=e.changedTouches[0].clientY-y0;if(Math.abs(dx)>40&&Math.abs(dx)>Math.abs(dy))show(cur+(dx<0?1:-1))}x0=null;setTimeout(()=>{hover=false;state()},1500)},{passive:true});
+ document.addEventListener('visibilitychange',state);show(0);state()}
+function countUp(root){if(RM)return;$$('[data-count]',root).forEach(el=>{const to=+el.dataset.count,t0=performance.now(),d=900;const f=t=>{const k=Math.min(1,(t-t0)/d);el.textContent=Math.round(to*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(f)};requestAnimationFrame(f)})}
+
+/* ---------- motion helpers ---------- */
+const io='IntersectionObserver' in window&&!RM?new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);if(e.target.querySelector('[data-count]'))countUp(e.target)}}),{rootMargin:'0px 0px -8% 0px'}):null;
+function reveal(root=app){const els=$$('.sechead,.pc,.cat,.trust>div,.reviews>div,.perks,.panel,.rv,.lhead',root).filter(e=>!e.closest('#layer')&&!e.classList.contains('rvl'));
+ const groups=new Map();els.forEach(e=>{const p=e.parentElement;groups.set(p,(groups.get(p)||0)+1);e.style.setProperty('--d',Math.min(groups.get(p)-1,7)*60+'ms');e.classList.add('rvl');io?io.observe(e):e.classList.add('in')})}
+document.addEventListener('load',e=>{if(e.target.tagName==='IMG')e.target.classList.add('ld')},true);
+const markLoaded=r=>$$('img',r).forEach(i=>i.complete&&i.naturalWidth&&i.classList.add('ld'));
+new MutationObserver(()=>markLoaded(document.body)).observe($('#layer'),{childList:true,subtree:true});
+let lastY=0;addEventListener('scroll',()=>{const y=scrollY;$('#hdr').classList.toggle('scrolled',y>8);lastY=y},{passive:true});
+const bump=()=>{const b=$('#cartBtn');b.classList.remove('bump');void b.offsetWidth;b.classList.add('bump')};
+
 /* ---------- pages ---------- */
 async function home(){const ps=await loadP();document.title='NHỊP – Giày Việt cho mỗi bước chân';
  const catImg={sneaker:'p1','chay-bo':'p9','giay-da':'p11',sandal:'p14'};
- app.innerHTML=`<section class="hero"><picture><source media="(max-width:767px)" srcset="/img/hero-m.webp"><img src="/img/hero.webp" alt="Người chạy bộ mang giày NHỊP trên phố Sài Gòn lúc bình minh" fetchpriority="high" width="1600" height="900"></picture>
- <div class="in wrap"><p class="eyebrow">Bộ sưu tập Thu 2026</p><h1 class="display">Đi theo<br>nhịp của bạn</h1><p>Phom rộng vừa cho chân người Việt, đệm êm cả ngày, thoáng khí cho trời nóng ẩm.</p>
- <div class="cta"><a class="btn white" href="/san-pham" data-link>Mua ngay</a><a class="btn ghost" style="color:#fff;border-color:#fff" href="/san-pham?cat=chay-bo" data-link>Giày chạy bộ</a></div></div></section>
- <div class="wrap"><div class="trust">${[['truck','Freeship từ 1 triệu','Giao 1–5 ngày toàn quốc'],['swap','Đổi size 30 ngày','Miễn phí đổi lần đầu'],['cash','Thanh toán COD','Kiểm tra hàng rồi trả tiền'],['shield','Bảo hành keo 6 tháng','Bong keo, sứt chỉ sửa free']].map(([i,a,b])=>`<div>${ic(i)}<p style="margin:0"><b>${a}</b><span>${b}</span></p></div>`).join('')}</div></div>
+ app.innerHTML=`${heroH()}
+ <div class="wrap"><div class="trust">${[['truck','Freeship từ 1 triệu','Giao 1–5 ngày toàn quốc'],['swap','Đổi size <span data-count="30">30</span> ngày','Miễn phí đổi lần đầu'],['cash','Thanh toán COD','Kiểm tra hàng rồi trả tiền'],['shield','Bảo hành keo 6 tháng','Bong keo, sứt chỉ sửa free']].map(([i,a,b])=>`<div>${ic(i)}<p style="margin:0"><b>${a}</b><span>${b}</span></p></div>`).join('')}</div></div>
  <section class="blk wrap"><div class="sechead"><h2 class="h2">Mua theo dòng</h2></div><div class="cats">${Object.entries(CATS).map(([k,v])=>`<a class="cat" href="/san-pham?cat=${k}" data-link><img loading="lazy" src="/img/${catImg[k]}.webp" alt="" width="900" height="900"><span>${v}</span><i>${ic('arrow')}</i></a>`).join('')}</div></section>
  <section class="blk wrap" style="padding-top:0"><div class="sechead"><h2 class="h2">Bán chạy tuần này</h2><a class="link" href="/san-pham" data-link>Xem tất cả</a></div><div class="grid">${ps.filter(p=>p.featured).slice(0,8).map(card).join('')}</div></section>
  <section class="wrap"><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:8px">
   <a href="/san-pham?gender=nam" data-link class="cat" style="aspect-ratio:4/3"><img loading="lazy" src="/img/p4.webp" alt="" width="900" height="900"><span>Giày nam</span><i>${ic('arrow')}</i></a>
   <a href="/san-pham?gender=nu" data-link class="cat" style="aspect-ratio:4/3"><img loading="lazy" src="/img/p6.webp" alt="" width="900" height="900"><span>Giày nữ</span><i>${ic('arrow')}</i></a></div></section>
- <section class="blk wrap"><div class="sechead"><h2 class="h2">Đang giảm giá</h2><a class="link" href="/san-pham?sort=sale" data-link>Xem tất cả</a></div><div class="grid">${ps.filter(p=>p.old).slice(0,4).map(card).join('')}</div></section>`;wireCards(app)}
+ <section class="blk wrap"><div class="sechead"><h2 class="h2">Đang giảm giá</h2><a class="link" href="/san-pham?sort=sale" data-link>Xem tất cả</a></div><div class="grid">${ps.filter(p=>p.old).slice(0,4).map(card).join('')}</div></section>`;wireCards(app);initHero()}
 
 async function list(){const ps=await loadP();const q=new URLSearchParams(location.search);let st={q:q.get('q')||'',cat:q.get('cat')||'',gender:q.get('gender')||'',size:q.get('size')||'',sort:q.get('sort')||'',stock:q.get('stock')||''};
  const title=()=>st.q?`“${esc(st.q)}”`:st.cat?CATS[st.cat]:st.gender?'Giày '+GEN[st.gender].toLowerCase():st.sort==='sale'?'Đang giảm giá':'Tất cả giày';
@@ -218,5 +256,5 @@ async function route(){const p=location.pathname.replace(/\/+$/,'')||'/';scrollT
  $$('.nav a').forEach(a=>a.toggleAttribute('aria-current',a.getAttribute('href')===location.pathname+location.search));
  try{if(p==='/')await home();else if(p==='/san-pham')await list();else if(p.startsWith('/p/'))await detail(p.slice(3));else if(p==='/gio-hang')await cartPage();else if(p==='/thanh-toan')await checkout();
  else if(p.startsWith('/dat-hang-thanh-cong/'))await success(decodeURIComponent(p.split('/')[2]));else if(p==='/tra-cuu')lookup();
- else{const pg=PAGES[p.slice(1)];if(pg){document.title=pg[0]+' – NHỊP';app.innerHTML=`<div class="wrap"><div class="page"><h1>${pg[0]}</h1>${pg[1]}</div></div>`}else notfound()}}catch(e){app.innerHTML=`<div class="wrap"><div class="alert" style="margin:32px 0">${esc(e.message)}</div></div>`}}
+ else{const pg=PAGES[p.slice(1)];if(pg){document.title=pg[0]+' – NHỊP';app.innerHTML=`<div class="wrap"><div class="page"><h1>${pg[0]}</h1>${pg[1]}</div></div>`}else notfound()}app.classList.remove('pg');void app.offsetWidth;app.classList.add('pg');markLoaded(app);reveal()}catch(e){app.innerHTML=`<div class="wrap"><div class="alert" style="margin:32px 0">${esc(e.message)}</div></div>`}}
 route();
