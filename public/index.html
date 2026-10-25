@@ -1,17 +1,43 @@
-<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#ffffff">
 <title>NHỊP – Giày Việt cho mỗi bước chân</title><meta name="description" content="NHỊP – thương hiệu giày Việt (cửa hàng demo). Sneaker, giày chạy bộ, giày da, sandal. Giao toàn quốc, COD, đổi size 30 ngày.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/style.css"></head><body>
-<div class="topbar">Freeship đơn từ 1.000.000đ · Đổi size miễn phí 30 ngày · Nhập <b>WELCOME10</b> giảm 10%</div>
-<header class="hdr"><div class="wrap hrow">
-<a href="/" class="logo" data-link>NHỊP<span>.</span></a>
-<nav class="nav"><a href="/san-pham" data-link>Tất cả</a><a href="/san-pham?cat=sneaker" data-link>Sneaker</a><a href="/san-pham?cat=chay-bo" data-link>Chạy bộ</a><a href="/san-pham?cat=giay-da" data-link>Giày da</a><a href="/san-pham?cat=sandal" data-link>Sandal</a></nav>
-<div class="hact"><a href="/tra-cuu" data-link class="ic" title="Tra cứu đơn">⌕<small>Tra đơn</small></a><a href="/gio-hang" data-link class="ic cartic" title="Giỏ hàng">🛍<b id="cartn">0</b></a></div>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="/img/hero.webp"><link rel="stylesheet" href="/style.css?v=2"></head><body>
+<a class="skip" href="#app">Bỏ qua tới nội dung</a>
+<div class="announce" role="region" aria-label="Ưu đãi"><div class="announce-track"><span>Freeship đơn từ 1.000.000đ</span><span>Đổi size miễn phí 30 ngày</span><span>Nhập <b>WELCOME10</b> giảm 10% đơn đầu</span></div></div>
+<header class="hdr" id="hdr"><div class="wrap hrow">
+<button class="icbtn only-m" id="menuBtn" aria-label="Mở menu"><svg><use href="#i-menu"/></svg></button>
+<a href="/" class="logo" data-link aria-label="NHỊP trang chủ">NHỊP<svg class="pulse" viewBox="0 0 40 16" aria-hidden="true"><path d="M0 8h12l3-6 5 12 4-9 2 3h14"/></svg></a>
+<nav class="nav" aria-label="Danh mục"><a href="/san-pham?gender=nam" data-link>Nam</a><a href="/san-pham?gender=nu" data-link>Nữ</a><a href="/san-pham?cat=sneaker" data-link>Sneaker</a><a href="/san-pham?cat=chay-bo" data-link>Chạy bộ</a><a href="/san-pham?cat=giay-da" data-link>Giày da</a><a href="/san-pham?cat=sandal" data-link>Sandal</a><a href="/san-pham?sort=sale" data-link class="sale">Sale</a></nav>
+<div class="hact"><button class="searchbtn" id="searchBtn" aria-label="Tìm kiếm"><svg><use href="#i-search"/></svg><span>Tìm kiếm</span></button>
+<a href="/tra-cuu" data-link class="icbtn only-d" aria-label="Tra cứu đơn hàng" title="Tra cứu đơn"><svg><use href="#i-box"/></svg></a>
+<button class="icbtn" id="cartBtn" aria-label="Giỏ hàng"><svg><use href="#i-bag"/></svg><b id="cartn" class="cnt" aria-live="polite">0</b></button></div>
 </div></header>
-<main id="app" class="wrap"></main>
-<footer class="ftr"><div class="wrap fgrid">
-<div><div class="logo">NHỊP<span>.</span></div><p>Giày Việt cho mỗi bước chân. Thiết kế tại Sài Gòn, bán toàn quốc.</p></div>
+<main id="app" tabindex="-1"></main>
+<footer class="ftr"><div class="wrap">
+<div class="fgrid"><div class="fbrand"><div class="logo light">NHỊP<svg class="pulse" viewBox="0 0 40 16" aria-hidden="true"><path d="M0 8h12l3-6 5 12 4-9 2 3h14"/></svg></div><p>Giày Việt cho mỗi bước chân. Thiết kế tại Sài Gòn, bán toàn quốc.</p></div>
+<div><h4>Mua sắm</h4><a href="/san-pham?gender=nam" data-link>Giày nam</a><a href="/san-pham?gender=nu" data-link>Giày nữ</a><a href="/san-pham?cat=chay-bo" data-link>Chạy bộ</a><a href="/san-pham?sort=sale" data-link>Đang giảm giá</a></div>
 <div><h4>Hỗ trợ</h4><a href="/tra-cuu" data-link>Tra cứu đơn hàng</a><a href="/huong-dan-chon-size" data-link>Hướng dẫn chọn size</a><a href="/lien-he" data-link>Liên hệ</a></div>
-<div><h4>Chính sách</h4><a href="/chinh-sach/doi-tra" data-link>Đổi trả</a><a href="/chinh-sach/van-chuyen" data-link>Vận chuyển</a><a href="/chinh-sach/bao-mat" data-link>Bảo mật (NĐ 13/2023)</a></div>
-</div><div class="wrap demo">⚠️ Đây là <b>cửa hàng DEMO</b> của một thương hiệu giả định. Sản phẩm, giá và đơn hàng không có thật, không thu tiền, không giao hàng. Ảnh minh hoạ từ Wikimedia Commons (giấy phép tự do, xem <a href="/chinh-sach/anh" data-link>nguồn ảnh</a>).</div></footer>
-<div id="toast"></div><script src="/app.js"></script></body></html>
+<div><h4>Chính sách</h4><a href="/chinh-sach/doi-tra" data-link>Đổi trả 30 ngày</a><a href="/chinh-sach/van-chuyen" data-link>Vận chuyển</a><a href="/chinh-sach/bao-mat" data-link>Bảo mật (NĐ 13/2023)</a></div></div>
+<div class="demo">Đây là <b>cửa hàng DEMO</b> của một thương hiệu giả định. Sản phẩm, giá và đơn hàng không có thật, không thu tiền, không giao hàng. Ảnh sản phẩm do AI tạo minh hoạ, không thuộc thương hiệu nào. <a href="/chinh-sach/anh" data-link>Chi tiết</a></div></div></footer>
+<div id="layer"></div><div id="toast" role="status" aria-live="polite"></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+<symbol id="i-bag" viewBox="0 0 24 24"><path d="M6 7h12l1 14H5L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></symbol>
+<symbol id="i-box" viewBox="0 0 24 24"><path d="M21 8 12 3 3 8v8l9 5 9-5V8Z"/><path d="m3 8 9 5 9-5M12 13v8"/></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+<symbol id="i-truck" viewBox="0 0 24 24"><path d="M3 6h11v10H3zM14 9h4l3 3v4h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></symbol>
+<symbol id="i-swap" viewBox="0 0 24 24"><path d="M4 8h14l-3-3M20 16H6l3 3"/></symbol>
+<symbol id="i-cash" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></symbol>
+<symbol id="i-ruler" viewBox="0 0 24 24"><path d="M3 16 16 3l5 5L8 21l-5-5Z"/><path d="m7 12 2 2M10 9l2 2M13 6l2 2"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 5 5 9-10"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 3Z"/></symbol>
+<symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1 1A16 16 0 0 1 4 5a1 1 0 0 1 1-1Z"/></symbol>
+</defs></svg>
+<script src="/app.js?v=2"></script></body></html>

@@ -10,7 +10,7 @@ const PROVINCES=['Hà Nội','TP. Hồ Chí Minh','Hải Phòng','Đà Nẵng','
 const CODES={WELCOME10:{pct:10,max:200000,label:'Giảm 10% (tối đa 200.000đ)'},NHIP50K:{flat:50000,min:800000,label:'Giảm 50.000đ cho đơn từ 800.000đ'}};
 const STATUSES=['cho_xac_nhan','da_xac_nhan','dang_giao','hoan_thanh','da_huy'];
 const shipFee=(prov,sub)=>sub>=1000000?0:(['Hà Nội','TP. Hồ Chí Minh'].includes(prov)?25000:35000);
-const pub=p=>{const stock={};for(const c of p.colors){stock[c]={};for(const s of p.sizes)stock[c][s]=db.stock[`${p.id}|${c}|${s}`]||0}const total=Object.values(stock).reduce((a,o)=>a+Object.values(o).reduce((x,y)=>x+y,0),0);return {...p,img:'/img/'+p.img,stock,total}};
+const pub=p=>{const stock={};for(const c of p.colors){stock[c]={};for(const s of p.sizes)stock[c][s]=db.stock[`${p.id}|${c}|${s}`]||0}const total=Object.values(stock).reduce((a,o)=>a+Object.values(o).reduce((x,y)=>x+y,0),0);return {...p,img:'/img/'+p.img,img2:'/img/'+p.img.replace('.webp','-b.webp'),stock,total}};
 function quote(items,province,code){
   if(!Array.isArray(items)||!items.length||items.length>30) throw new Error('Giỏ hàng trống hoặc không hợp lệ');
   const lines=[];const need={};
